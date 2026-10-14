@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Purāṇas · Bhāravataraṇa</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-12 0 64 64'><path d='M8 62 V14 Q8 4 20 4 Q32 4 32 14 V62' fill='none' stroke='%239a9488' stroke-width='3'/><path d='M13 62 V17 Q13 9 20 9 Q27 9 27 17 V62' fill='none' stroke='%239a9488' stroke-width='2' opacity='.6'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400;0,600;1,400;1,600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--ground:#121314;--ink:#e6dfd1;--ash:#9a9488;--rule:#2a2b2e;--dilbat:#d4a94e;--panel:#17181a;--mark:#e6dfd1}
+:root[data-theme="light"]{--ground:#f3f2ee;--ink:#1c1c1e;--ash:#6b665d;--rule:#d9d6cf;--dilbat:#8a5f0c;--panel:#eceae4;--mark:#1c1c1e}
+@media (prefers-color-scheme: light){:root:not([data-theme="dark"]){--ground:#f3f2ee;--ink:#1c1c1e;--ash:#6b665d;--rule:#d9d6cf;--dilbat:#8a5f0c;--panel:#eceae4;--mark:#1c1c1e}}
+*{box-sizing:border-box}
+html{background:var(--ground)}
+body{margin:0;background:var(--ground);color:var(--ink);font-family:"Source Serif 4",Georgia,serif;font-size:19px;line-height:1.62}
+.mono{font-family:"IBM Plex Mono",ui-monospace,Menlo,monospace;font-size:12px;letter-spacing:.06em;color:var(--ash)}
+.up{text-transform:uppercase}
+
+nav.top{display:flex;flex-wrap:nowrap;gap:12px 22px;align-items:center;padding:14px 24px;border-bottom:1px solid var(--rule)}
+nav.top a,nav.top button{white-space:nowrap}
+nav.top .brand{font-family:"Source Serif 4",serif;font-size:18px;font-weight:600;font-variant:small-caps;letter-spacing:.08em;color:var(--ink);display:flex;align-items:center;gap:12px;text-decoration:none;flex:none}
+nav.top .brand .niche{width:14px;height:22px;color:var(--ash);flex:none}
+nav.top .links{position:relative;display:flex;gap:22px;min-width:0;overflow-x:auto;scrollbar-width:none;padding:3px 0}
+nav.top .links::-webkit-scrollbar{display:none}
+nav.top a.l{text-decoration:none;color:var(--ash);padding-bottom:2px;border-bottom:1px solid transparent}
+nav.top a.l:hover{color:var(--dilbat)}
+nav.top a.l.on{color:var(--dilbat);border-bottom-color:var(--dilbat)}
+nav.top .sp{flex:1}
+nav.top button{background:none;border:1px solid var(--rule);color:var(--ash);cursor:pointer;padding:3px 9px;font:inherit;flex:none}
+@media (max-width:700px){nav.top{flex-wrap:wrap;gap:0 16px;padding:12px 16px 0}nav.top .links{order:3;flex:0 0 calc(100% + 32px);margin:0 -16px;padding:10px 40px 12px 16px;-webkit-mask-image:linear-gradient(to right,#000 calc(100% - 36px),transparent);mask-image:linear-gradient(to right,#000 calc(100% - 36px),transparent)}}
+a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible{outline:2px solid var(--dilbat);outline-offset:3px}
+.skip{position:absolute;left:-9999px;top:10px;z-index:30;background:var(--ground);color:var(--dilbat);padding:6px 10px;border:1px solid var(--dilbat);text-decoration:none}
+.skip:focus{left:12px}
+
+main{max-width:calc(34em + 96px);margin:0 auto;padding:34px 48px 120px}
+h1{font-size:34px;font-weight:600;line-height:1.15;margin:0 0 10px}
+h1.small{font-size:28px}
+h2{font-size:17px;font-weight:600;font-variant:small-caps;letter-spacing:.08em;margin:44px 0 10px;color:var(--ink)}
+p{margin:0 0 1em}
+p.lead{font-size:21px;line-height:1.5}
+p.quiet,.quiet{color:var(--ash)}
+a{color:var(--dilbat)}
+a.plain{color:inherit;text-decoration:none}
+a.plain:hover{color:var(--dilbat)}
+a.nm{color:inherit;text-decoration:none;border-bottom:1px dotted var(--ash);cursor:pointer}
+a.nm:hover{color:var(--dilbat);border-bottom-color:var(--dilbat)}
+.parts{list-style:none;padding:0;margin:0;border-top:1px solid var(--rule)}
+.parts li{border-bottom:1px solid var(--rule)}
+.parts a{display:grid;grid-template-columns:64px 1fr;gap:0 16px;padding:14px 0;color:inherit;text-decoration:none}
+.parts a:hover .t{color:var(--dilbat)}
+.parts .n{padding-top:6px}
+.parts .t{font-size:21px;font-weight:600}
+.parts .s{font-size:17px;color:var(--ash);margin-top:2px}
+.parts .m{margin-top:4px}
+/* the front door: the one ornament once, the way in, how deep it goes, then the apparatus as a quiet list */
+.door{margin:0 0 16px}
+.door .niche{display:block;width:40px;height:64px;color:var(--ash)}
+p.begin{margin:26px 0 10px;font-size:21px;font-weight:600;line-height:1.4}
+p.begin a{text-decoration:none;border-bottom:1px solid var(--dilbat)}
+p.depth{font-size:17px;line-height:1.5;margin:0 0 1.6em}
+.deeper{list-style:none;padding:0;margin:0;border-top:1px solid var(--rule)}
+.deeper li{border-bottom:1px solid var(--rule)}
+.deeper a{display:block;padding:14px 0;color:inherit;text-decoration:none}
+.deeper a:hover .t{color:var(--dilbat)}
+.deeper .t{display:block;font-size:19px;font-weight:600}
+.deeper .s{display:block;font-size:16px;color:var(--ash);margin-top:2px}
+.colophon{margin-top:44px;font-size:16px}
+@media (max-width:700px){main{padding:22px 16px 100px}body{font-size:18px}h1{font-size:28px}p.lead{font-size:19px;line-height:1.55}
+.door .niche{width:30px;height:48px}p.begin{font-size:19px}.parts a{grid-template-columns:1fr;gap:2px 0}.parts .n{padding-top:0}}
+.crumb{margin-bottom:8px}
+.story p{margin:0 0 1em}
+.told{margin:6px 0 2px}
+.margin{margin:0 0 1.2em 2em}
+.margin:before{content:"~ ";color:var(--dilbat)}
+.people{border-top:1px solid var(--rule)}
+.people details{border-bottom:1px solid var(--rule);padding:10px 0}
+.people summary{cursor:pointer;list-style:none;display:flex;align-items:baseline;gap:12px}
+.people summary::-webkit-details-marker{display:none}
+.people summary .t{font-size:19px;font-weight:600}
+.people summary:hover .t{color:var(--dilbat)}
+.people summary .bar{height:8px;background:var(--mark);opacity:.85;border-radius:1px;flex:none}
+.people summary .m{margin-left:auto;white-space:nowrap}
+.people .rec{padding:10px 0 4px 0}
+.people .rec .q{margin:0 0 3px;font-size:17px}
+.people .rec .q.f{font-style:italic}
+.people .rec .c{margin:0}
+.people .rec .c .tag{color:var(--dilbat)}
+.pn{display:flex;justify-content:space-between;gap:20px;margin-top:60px;padding-top:16px;border-top:1px solid var(--rule)}
+.pn a{text-decoration:none;font-size:16px}
+.doc-body h2{font-size:22px;font-variant:normal;letter-spacing:0;margin:1.6em 0 .5em}
+.doc-body h3{font-size:19px;font-weight:600;margin:1.4em 0 .4em}
+.doc-body h4,.doc-body h5,.doc-body h6{font-size:17px;font-style:italic;font-weight:600;margin:1.2em 0 .4em}
+.doc-body p.margin{margin:-.6em 0 1.2em 2em;font-size:12px}
+.doc-body p.indent{margin-left:2em;color:var(--ash)}
+.doc-body blockquote{margin:0 0 1em 1.4em;padding-left:1em;border-left:2px solid var(--rule)}
+.doc-body ul,.doc-body ol{padding-left:1.4em}
+.doc-body hr{border:0;border-top:1px solid var(--rule);margin:2em 0}
+.doc-body .tbl{overflow-x:auto;margin:0 0 1.2em}
+.doc-body table{border-collapse:collapse;font-size:15px;line-height:1.45;min-width:100%}
+.doc-body th,.doc-body td{border-bottom:1px solid var(--rule);padding:6px 10px 6px 0;text-align:left;vertical-align:top}
+.doc-body th{font-weight:600;font-size:13px;font-family:"IBM Plex Mono",monospace;color:var(--ash);text-transform:uppercase}
+.doc-body code{font-family:"IBM Plex Mono",monospace;font-size:14px;color:var(--ash)}
+.doc-body pre{font-family:"IBM Plex Mono",monospace;font-size:13px;white-space:pre-wrap;background:var(--panel);padding:12px 14px;border:1px solid var(--rule)}
+.chapters{list-style:none;padding:0;margin:0;border-top:1px solid var(--rule)}
+.chapters li{display:grid;grid-template-columns:64px 1fr auto;gap:0 16px;padding:12px 0;border-bottom:1px solid var(--rule);align-items:baseline}
+.chapters .t{font-size:19px}
+.chapters a.t{text-decoration:none;color:inherit}
+.chapters a.t:hover{color:var(--dilbat)}
+/* sources and themes */
+.srcs{list-style:none;padding:0;margin:0 0 10px;border-top:1px solid var(--rule)}
+.srcs li{border-bottom:1px solid var(--rule)}
+.srcs a{display:block;padding:10px 0;color:inherit;text-decoration:none}
+.srcs a:hover .t{color:var(--dilbat)}
+.srcs .t{font-size:18px;font-weight:600;display:block}
+.srcs .s{font-size:15px;color:var(--ash);display:block}
+.srcs .m{display:block;margin-top:2px}
+.lines .rec{border-top:1px solid var(--rule);padding:10px 0}
+.lines .rec .q{margin:0 0 4px;font-size:17px}
+.lines .rec .q.f{font-style:italic}
+.lines .rec .c{margin:0 0 4px}
+.lines .rec .c .tag{color:var(--dilbat)}
+.lines .rec .meta{font-size:15px;margin:0;line-height:1.5}
+.lines .rec .meta .mono{margin-right:4px}
+.lines h3{font-size:19px;font-weight:600;margin:28px 0 6px}
+.lines details{border-bottom:1px solid var(--rule);padding:8px 0}
+.lines summary{cursor:pointer;list-style:none;display:flex;gap:12px;align-items:baseline}
+.lines summary::-webkit-details-marker{display:none}
+.lines summary .t{font-size:19px;font-weight:600}
+.lines summary .m{margin-left:auto}
+/* the work */
+.work table{border-collapse:collapse;width:100%;font-size:16px}
+.work td,.work th{border-bottom:1px solid var(--rule);padding:5px 8px 5px 0;text-align:left;vertical-align:top;font-weight:400}
+.work td.n,.work th.n{text-align:right;font-family:"IBM Plex Mono",monospace;font-size:13px;color:var(--ash);white-space:nowrap}
+.work h2{margin-top:34px}
+/* the drawer */
+#drawer{position:fixed;top:0;right:0;height:100%;width:440px;max-width:100%;background:var(--panel);border-left:1px solid var(--rule);transform:translateX(100%);transition:transform 180ms ease-out;overflow-y:auto;padding:18px 22px 60px;z-index:20}
+#drawer.open{transform:none}
+@media (prefers-reduced-motion: reduce){#drawer{transition:none}}
+#drawer .close{position:absolute;top:12px;right:16px;cursor:pointer;background:none;border:0;color:var(--ash);font:inherit;font-size:20px}
+#drawer h3{font-size:20px;font-weight:600;margin:4px 0 2px}
+#drawer p{font-size:16px}
+#drawer ul{padding-left:18px;margin:4px 0 12px}
+#drawer li{font-size:15px;margin:2px 0}
+#scrim{position:fixed;inset:0;display:none;z-index:10}
+#scrim.on{display:block}
+@media (max-width:700px){#drawer{top:auto;bottom:0;height:85%;width:100%;border-left:0;border-top:1px solid var(--rule);transform:translateY(100%)}#drawer.open{transform:none}}
+</style>
+</head>
+<body>
+<a class="skip mono up" href="#main">Skip to the text</a><nav class="top mono up"><a class="brand" href="../index.html"><svg class="niche" viewBox="0 0 40 64" aria-hidden="true"><path d="M8 62 V14 Q8 4 20 4 Q32 4 32 14 V62" fill="none" stroke="currentColor" stroke-width="1.2"/><path d="M13 62 V17 Q13 9 20 9 Q27 9 27 17 V62" fill="none" stroke="currentColor" stroke-width="0.8" opacity=".6"/></svg><span>Bhāravataraṇa</span></a><div class="links"><a class="l" href="../index.html">Home</a><a class="l" href="../story/the-horses-foot.html">The story</a><a class="l" href="../chapters/index.html">Chapters</a><a class="l on" href="../sources.html">Sources</a><a class="l" href="../themes.html">Themes</a><a class="l" href="../figures.html">Figures</a><a class="l" href="../research.html">Research</a><a class="l" href="../wall.html">The wall</a><a class="l" href="../how.html">How it was made</a></div><span class="sp"></span><button id="theme" class="mono up" type="button">light / dark</button></nav><script>(function(){var a=document.querySelector("nav.top .links a.on");if(a){var l=a.parentNode;if(l.scrollWidth>l.clientWidth)l.scrollLeft=Math.max(0,a.offsetLeft-16);}})();</script><main id="main"><p class="crumb mono up"><a class="plain" href="../sources.html">The sources</a> · India</p><h1 class="small">The Purāṇas</h1><p class="lead quiet">the Bhāgavata, Viṣṇu, Matsya and other Purāṇas: the churning of the ocean, Mohinī, the flood of Manu</p><p class="mono">India · Sanskrit · first millennium AD</p><h2>Editions and translations used</h2><p>our rendering <span class="mono">(4)</span></p><h2>Where it speaks in the story</h2><ul><li><a href="../story/the-horses-foot.html">The Horse&#x27;s Foot</a> <span class="mono">1 line</span></li><li><a href="../story/the-elders.html">The Elders</a> <span class="mono">4 lines</span></li><li><a href="../story/the-gifts-of-the-smiths.html">The Gifts of the Smiths</a> <span class="mono">6 lines</span></li><li><a href="../story/remedy.html">Remedy</a> <span class="mono">2 lines</span></li><li><a href="../story/the-cut.html">The Cut</a> <span class="mono">1 line</span></li><li><a href="../story/claimed.html">Claimed</a> <span class="mono">1 line</span></li><li><a href="../story/awaiting.html">Awaiting</a> <span class="mono">3 lines</span></li></ul><h2>Figures it names</h2><p><a class="nm" data-name="vishnu">Viṣṇu</a> <span class="mono">5</span>, <a class="nm" data-name="asuras">Asuras</a> <span class="mono">2</span>, <a class="nm" data-name="brahma">Brahmā</a> <span class="mono">2</span>, <a class="nm" data-name="krishna">Kṛṣṇa</a> <span class="mono">2</span>, <a class="nm" data-name="danavas">Dānavas</a> <span class="mono">1</span>, <a class="nm" data-name="daityas">Daityas</a> <span class="mono">1</span>, <a class="nm" data-name="devas">Devas</a> <span class="mono">1</span>, <a class="nm" data-name="rahu">Rāhu</a> <span class="mono">1</span>, <a class="nm" data-name="surya">Sūrya</a> <span class="mono">1</span>, <a class="nm" data-name="soma">Soma</a> <span class="mono">1</span>, <a class="nm" data-name="shukra">Śukra</a> <span class="mono">1</span>, <a class="nm" data-name="hayagriva">Hayagrīva</a> <span class="mono">1</span>, <a class="nm" data-name="jaya-vijaya">Jaya and Vijaya</a> <span class="mono">1</span>, <a class="nm" data-name="ravana">Rāvaṇa</a> <span class="mono">1</span>, <a class="nm" data-name="vivasvat">Vivasvat</a> <span class="mono">1</span>, <a class="nm" data-name="maya-sita">Māyā-Sītā</a> <span class="mono">1</span>, <a class="nm" data-name="kali">Kali</a> <span class="mono">1</span></p><h2>Themes it tells</h2><p><a href="../themes/path-life-allotted.html">Deathless life is allotted, refused or negotiated (Atlas path 4)</a> <span class="mono">4</span>, <a href="../themes/end-of-the-manvantara.html">The end of the age in India and in the Theosophical file</a> <span class="mono">2</span>, <a href="../themes/made-a-star.html">Made a star, and the two women who became Venus</a> <span class="mono">1</span>, <a href="../themes/teachers-of-the-arts.html">The teachers of the arts</a> <span class="mono">1</span>, <a href="../themes/flood-survivor.html">The flood survivor</a> <span class="mono">1</span>, <a href="../themes/path-defeated-order-book.html">A defeated order travels through its book (Atlas path 8)</a> <span class="mono">1</span>, <a href="../themes/bound-with-a-timer.html">The bound with a timer</a> <span class="mono">1</span>, <a href="../themes/war-instead-of-flood.html">War sent in place of the flood</a> <span class="mono">1</span>, <a href="../themes/two-files.html">One deed, two verdicts (a flip; Plate D)</a> <span class="mono">1</span>, <a href="../themes/the-cut.html">The cut between heaven and earth</a> <span class="mono">1</span></p><h2>In the research</h2><p><a href="../research.html?q=The Purāṇas">Search the fifty research documents for "The Purāṇas"</a></p><h2>The lines (9)</h2><p class="quiet" style="font-size:16px">A line in italics is not yet checked against the printed book, or is our own translation; a line in copyright is cut to a fragment. The id at the end is the ledger record.</p><div class="people lines"><div class="rec"><p class="q">“&quot;tato nārāyaṇo māyām āsthito mohinīṃ prabhuḥ / strīrūpam adbhutaṃ kṛtvā dānavān abhisaṃśritaḥ&quot; (1.16.39)”</p><p class="c mono">F2. &quot;Mohinī&quot; an adjective, not yet a name.</p><p class="meta"><span class="mono">figures</span> <a class="nm" data-name="vishnu">Viṣṇu</a>, <a class="nm" data-name="danavas">Dānavas</a><br><span class="mono">themes</span> <a href="../themes/path-life-allotted.html">Deathless life is allotted, refused or negotiated (Atlas path 4)</a><br><span class="mono">in the story</span> <a href="../story/the-elders.html">The Elders</a> · <a href="../story/the-gifts-of-the-smiths.html">The Gifts of the Smiths</a> <span class="mono quiet">· gaps-0072</span></p></div><div class="rec"><p class="q">“&quot;kleśabhājo bhaviṣyanti daityā yūyaṃ phalagrahāḥ&quot; (8.6.23)
+&quot;yūyaṃ tad anumodadhvaṃ yad icchanty asurāḥ surāḥ&quot; (8.6.24)”</p><p class="c mono">F4. The Bhāgavata&#x27;s alliance, ordered before it is sworn.</p><p class="meta"><span class="mono">figures</span> <a class="nm" data-name="vishnu">Viṣṇu</a>, <a class="nm" data-name="daityas">Daityas</a>, <a class="nm" data-name="asuras">Asuras</a>, <a class="nm" data-name="devas">Devas</a><br><span class="mono">themes</span> <a href="../themes/path-life-allotted.html">Deathless life is allotted, refused or negotiated (Atlas path 4)</a><br><span class="mono">in the story</span> <a href="../story/the-elders.html">The Elders</a> · <a href="../story/the-gifts-of-the-smiths.html">The Gifts of the Smiths</a> <span class="mono quiet">· gaps-0079</span></p></div><div class="rec"><p class="q">“&quot;yady abhyupetaṃ kva ca sādhv asādhu vā kṛtaṃ mayā vo vibhaje sudhām imām&quot; (8.9.12)
+&quot;apramāṇavidas tasyāḥ tat tathety anvamaṃsata&quot; (8.9.13)”</p><p class="c mono">F5. The loophole clause, word for word, and the consent given blind.</p><p class="meta"><span class="mono">figures</span> <a class="nm" data-name="vishnu">Viṣṇu</a>, <a class="nm" data-name="asuras">Asuras</a><br><span class="mono">themes</span> <a href="../themes/path-life-allotted.html">Deathless life is allotted, refused or negotiated (Atlas path 4)</a><br><span class="mono">in the story</span> <a href="../story/the-elders.html">The Elders</a> · <a href="../story/the-gifts-of-the-smiths.html">The Gifts of the Smiths</a> <span class="mono quiet">· gaps-0083</span></p></div><div class="rec"><p class="q">“&quot;devaliṅgapraticchannaḥ svarbhānur devasaṃsadi&quot; (8.9.24)
+&quot;śiras tv amaratāṃ nītam ajo graham acīkḷpat / yas tu parvaṇi candrārkāv abhidhāvati vairadhīḥ&quot; (8.9.25-26)”</p><p class="c mono">F7. Rāhu under his Vedic name, and the head made a planet.</p><p class="meta"><span class="mono">figures</span> <a class="nm" data-name="rahu">Rāhu</a>, <a class="nm" data-name="brahma">Brahmā</a>, <a class="nm" data-name="surya">Sūrya</a>, <a class="nm" data-name="soma">Soma</a><br><span class="mono">themes</span> <a href="../themes/made-a-star.html">Made a star, and the two women who became Venus</a>, <a href="../themes/path-life-allotted.html">Deathless life is allotted, refused or negotiated (Atlas path 4)</a><br><span class="mono">in the story</span> <a href="../story/the-elders.html">The Elders</a> · <a href="../story/the-gifts-of-the-smiths.html">The Gifts of the Smiths</a> <span class="mono quiet">· gaps-0089</span></p></div><div class="rec"><p class="q">“adhyāpayiṣyāmi tu yaṃ tasya vidyā phaliṣyati&quot;
+&quot;whomever I teach, the knowledge will bear fruit in him”</p><p class="c mono">F12. Kaca sets the terms on which the art circulates.</p><p class="meta"><span class="mono">figures</span> <a class="nm" data-name="shukra">Śukra</a><br><span class="mono">themes</span> <a href="../themes/teachers-of-the-arts.html">The teachers of the arts</a><br><span class="mono">in the story</span> <a href="../story/the-gifts-of-the-smiths.html">The Gifts of the Smiths</a> <span class="mono quiet">· gaps-0114</span></p></div><div class="rec"><p class="q f">`āsīd atītakalpānte brāhmo naimittiko layaḥ` (8.24.7), the naimittika dissolution at the end of Brahmā&#x27;s day
+`kālenāgatanidrasya dhātuḥ śiśayiṣor balī / mukhato niḥsṛtān vedān hayagrīvo &#x27;ntike &#x27;harat`: &quot;when sleep had come on the creator in time and he wished to lie down, mighty Hayagrīva, close by, stole the Vedas that had issued from his mouth&quot;</p><p class="c mono">F17 · The flood as a clock, the theft in the creator&#x27;s sleep. BhP 8.24.7–8. <span class="tag">our translation</span></p><p class="meta"><span class="mono">figures</span> <a class="nm" data-name="brahma">Brahmā</a>, <a class="nm" data-name="hayagriva">Hayagrīva</a><br><span class="mono">themes</span> <a href="../themes/flood-survivor.html">The flood survivor</a>, <a href="../themes/end-of-the-manvantara.html">The end of the age in India and in the Theosophical file</a>, <a href="../themes/path-defeated-order-book.html">A defeated order travels through its book (Atlas path 8)</a><br><span class="mono">in the story</span> <a href="../story/remedy.html">Remedy</a> · <a href="../story/claimed.html">Claimed</a> · <a href="../story/awaiting.html">Awaiting</a> <span class="mono quiet">· u3-0158</span></p></div><div class="rec"><p class="q f">&quot;you two do not deserve to dwell at the feet of the enemy of Madhu, free of passion and darkness; go, fools, quickly to the most sinful asura womb&quot; (*pāpiṣṭhām āsurīṃ yoniṃ bāliśau yātam āśv ataḥ*, 7.1.37); &quot;thus cursed, falling from their own abode, they were told by the compassionate ones: after three births, return to your world&quot; (*punar janmabhir vāṃ tribhir lokāya kalpatām*, 7.1.38)
+&quot;now freed from the curse, their sin destroyed by Kṛṣṇa&#x27;s discus&quot; (*adhunā śāpanirmuktau kṛṣṇacakrahatāṃhasau*, 7.1.45), &quot;brought back to Hari&#x27;s side, they went as Viṣṇu&#x27;s attendants&quot; (*jagmatur viṣṇupārṣadau*, 7.1.46)</p><p class="c mono">F23 · The doorkeepers&#x27; three births. Bhāgavata Purāṇa 7.1.37–38, 45–46. <span class="tag">our translation</span></p><p class="meta"><span class="mono">figures</span> <a class="nm" data-name="jaya-vijaya">Jaya and Vijaya</a>, <a class="nm" data-name="krishna">Kṛṣṇa</a>, <a class="nm" data-name="vishnu">Viṣṇu</a><br><span class="mono">themes</span> <a href="../themes/bound-with-a-timer.html">The bound with a timer</a><br><span class="mono">in the story</span> <a href="../story/the-horses-foot.html">The Horse&#x27;s Foot</a> · <a href="../story/awaiting.html">Awaiting</a> <span class="mono quiet">· u3-0164</span></p></div><div class="rec"><p class="q f">*mayā māyāmayī sṛṣṭā rāvaṇasya vadhāya sā*, &quot;I made that one of illusion for the killing of Rāvaṇa&quot;
+`apā́gūhann amṛ́tāṃ mártyebhyaḥ kṛtvī́ sávarṇām adadur vívasvate`: the gods hide the immortal bride and give Vivasvat &quot;one of like appearance&quot;</p><p class="c mono">F29 · The phantom woman. Kūrma Purāṇa 2.33.138; Rigveda 10.17.2. <span class="tag">our translation</span></p><p class="meta"><span class="mono">figures</span> <a class="nm" data-name="ravana">Rāvaṇa</a>, <a class="nm" data-name="vivasvat">Vivasvat</a>, <a class="nm" data-name="maya-sita">Māyā-Sītā</a><br><span class="mono">themes</span> <a href="../themes/war-instead-of-flood.html">War sent in place of the flood</a>, <a href="../themes/two-files.html">One deed, two verdicts (a flip; Plate D)</a><br><span class="mono">in the story</span> <a href="../story/the-gifts-of-the-smiths.html">The Gifts of the Smiths</a> · <a href="../story/remedy.html">Remedy</a> <span class="mono quiet">· u3-0170</span></p></div><div class="rec"><p class="q f">`yasmin kṛṣṇo divaṃ yātas tasminn eva tadāhani / pratipannaṃ kaliyugam`, &quot;the day Kṛṣṇa went to heaven, on that very day the Kali age set in&quot;
+&quot;on the day Hari went to heaven, leaving the earth, on that day this mighty Kali, whose body is Time, came down&quot; (ViP 5.38.8)
+Variant telling, on the field: &quot;know that the Kali age has arrived (prāptaṃ kaliyugaṃ viddhi), and the Pāṇḍava&#x27;s vow&quot; (MBh CE 9.59.21)</p><p class="c mono">F31 · The god leaves; Kali comes down. BhP 12.2.33; ViP 5.38.8; MBh CE 9.59.21. <span class="tag">our translation</span></p><p class="meta"><span class="mono">figures</span> <a class="nm" data-name="kali">Kali</a>, <a class="nm" data-name="krishna">Kṛṣṇa</a>, <a class="nm" data-name="vishnu">Viṣṇu</a><br><span class="mono">themes</span> <a href="../themes/the-cut.html">The cut between heaven and earth</a>, <a href="../themes/end-of-the-manvantara.html">The end of the age in India and in the Theosophical file</a><br><span class="mono">in the story</span> <a href="../story/the-cut.html">The Cut</a> · <a href="../story/awaiting.html">Awaiting</a> <span class="mono quiet">· u3-0176</span></p></div></div><div class="pn"><span><a href="../sources.html">← All sources</a></span><span></span></div></main><div id="scrim"></div><aside id="drawer" aria-live="polite"></aside><script>window.NAMES = {"brahma":{"name":"Brahmā","type":"god","gloss":"the creator on the seat, grandfather of all beings, who hears the Earth's petition and orders the gods to take birth on earth","forms":["Sanskrit: Brahmā","Sanskrit: Prajāpati","Sanskrit: Pitāmaha","Sanskrit: Dhātṛ","Sanskrit (Kashmir): Druhina"],"eq":[]},"vishnu":{"name":"Viṣṇu","type":"god","gloss":"the high god who descends, as the fish, the boar, the man-lion, the dwarf, Rāma, Kṛṣṇa and Kalki to come","forms":["Sanskrit: Viṣṇu","Sanskrit: Nārāyaṇa","Sanskrit: Hari","Sanskrit: Keśava","Sanskrit: Acyuta","Sanskrit (Kashmir): Upendra","English: Vishnu"],"eq":[]},"krishna":{"name":"Kṛṣṇa","type":"god","gloss":"Viṣṇu's descent in the Mahābhārata, the Vāsudeva of the Besnagar pillar","forms":["Sanskrit: Kṛṣṇa","Sanskrit: Kṛṣṇa Vāsudeva","Sanskrit: Vāsudeva","English: Krishna"],"eq":["Megasthenes (Arrian Indica 8.5): the Herakles of the Sourasenoi at Methora (read as Kṛṣṇa at Mathurā; others propose Indra or Śiva or Balarāma)"]},"devas":{"name":"Devas","type":"company","gloss":"the younger side of the Indian gods, sons of Aditi, demons under the same name in Iran","forms":["Sanskrit: deva","Sanskrit: Ādityas","Sanskrit (back-formation): sura"],"eq":[]},"asuras":{"name":"Asuras","type":"company","gloss":"the elder side of the Indian powers, lords in the Rig Veda and demons later, the former gods","forms":["Sanskrit: asura","Sanskrit (Amarakośa): pūrvadevāḥ","English (Schmidt): the Assuri","English (SD): A-suras"],"eq":["Schmidt: the Assuri are the evil spirits in the clefts of the world-mountain Sumeru","the SD: the Kumaras became rebels or Asuras"]},"daityas":{"name":"Daityas","type":"company","gloss":"the sons of Diti, elder rivals of the gods","forms":["Sanskrit: Daityas"],"eq":["the SD (II p. 501): the Daityas and Danavas are the Titans and the progeny of the Sons of God and the daughters of men"]},"danavas":{"name":"Dānavas","type":"company","gloss":"the sons of Danu, elder rivals of the gods","forms":["Sanskrit: Dānavas"],"eq":[]},"rahu":{"name":"Rāhu","type":"power","gloss":"the asura who pierced the Sun with darkness, his head made a planetary power","forms":["Sanskrit: Rāhu","Vedic: Svarbhānu"],"eq":[]},"shukra":{"name":"Śukra","type":"power","gloss":"the asuras' priest, holder of the reviving lore, the planet Venus; Uśanas Kāvya in the Rig Veda","forms":["Sanskrit: Śukra","Vedic: Uśanas Kāvya","Vedic: Kāvya Uśanā","English (SD): Usanas-Sukra","English (SD): Asphujit","English (SD): Lohitanga","English (SD): Daitya-Guru","English (SD): Bhargava"],"eq":["the SD: Usanas-Sukra is Venus-Lucifer and Sol alter","u3 (Unit 2): Uśanas Kāvya is the Avestan Kauui Usan"]},"soma":{"name":"Soma","type":"god","gloss":"the Vedic sacred drink and the Moon, who seizes Tara","forms":["Vedic: Soma"],"eq":[]},"kali":{"name":"Kali","type":"power","gloss":"the losing dice-throw and the fourth age personified, whose body is Time, born as Duryodhana","forms":["Sanskrit: Kali","Sanskrit: kalipūruṣa"],"eq":[]},"vivasvat":{"name":"Vivasvat","type":"god","gloss":"the Vedic sun god, father of Yama and Manu, husband of Saraṇyū","forms":["Vedic: Vivasvat"],"eq":[]},"hayagriva":{"name":"Hayagrīva","type":"power","gloss":"the horse-necked demon who steals the Vedas","forms":["Sanskrit: Hayagrīva"],"eq":[]},"jaya-vijaya":{"name":"Jaya and Vijaya","type":"power","gloss":"the doorkeepers of Vaikuṇṭha, cursed by the Kumāras to be born three times as Viṣṇu's enemies","forms":["Sanskrit: Jaya and Vijaya"],"eq":[]},"ravana":{"name":"Rāvaṇa","type":"power","gloss":"the demon king of Lanka who seized Sītā; in the Maranao epic Maharadia Lawana","forms":["Sanskrit: Rāvaṇa","English: Ravana","Maranao: Maharadia Lawana"],"eq":["the SD: one Daitya reborn as Hiranyakasipu and Ravana and Sisupala"]},"maya-sita":{"name":"Māyā-Sītā","type":"human","gloss":"the illusion-Sītā, the shadow taken in her place in the later Rāmāyaṇas","forms":["Sanskrit: Māyā-Sītā"],"eq":[]},"surya":{"name":"Sūrya","type":"god","gloss":"the Sun, who teaches astronomy to the asura Maya in the Sūrya Siddhānta","forms":["Sanskrit: Sūrya","English: Surya"],"eq":[]}}; window.WALLPATH = "../wall.html";</script><script>
+const $ = (s, el=document) => el.querySelector(s);
+const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const themeBtn = $('#theme'); if (themeBtn) themeBtn.addEventListener('click', () => {
+  const r = document.documentElement; const c = r.getAttribute('data-theme');
+  const dark = c ? c === 'dark' : !window.matchMedia('(prefers-color-scheme: light)').matches;
+  r.setAttribute('data-theme', dark ? 'light' : 'dark');
+});
+const drawer = $('#drawer'), scrim = $('#scrim'); const N = window.NAMES || {}; const WALL = window.WALLPATH || 'wall.html';
+function nameCard(id){
+  const c = N[id]; if (!c) return;
+  const forms = c.forms.length ? `<p class="mono up">Names in every tongue</p><ul>` + c.forms.map(f => `<li>${esc(f)}</li>`).join('') + `</ul>` : '';
+  const eq = c.eq.length ? `<p class="mono up">Who equated them</p><ul>` + c.eq.map(f => `<li>${esc(f)}</li>`).join('') + `</ul>` : '';
+  drawer.innerHTML = `<button class="close" aria-label="close">×</button><p class="mono">${esc(c.type)}</p><h3>${esc(c.name)}</h3><p>${esc(c.gloss)}</p>${forms}${eq}<p class="mono"><a href="${WALL}#name/${esc(id)}">this figure on the wall: its parts and its lines</a></p>`;
+  drawer.classList.add('open'); scrim.classList.add('on'); drawer.scrollTop = 0;
+  $('.close', drawer).addEventListener('click', closeDrawer);
+}
+function closeDrawer(){ drawer.classList.remove('open'); scrim.classList.remove('on'); }
+if (scrim) scrim.addEventListener('click', closeDrawer);
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeDrawer(); });
+document.querySelectorAll('a.nm').forEach(a => a.addEventListener('click', () => nameCard(a.dataset.name)));
+</script></body></html>

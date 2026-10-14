@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Qurʾān · Bhāravataraṇa</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-12 0 64 64'><path d='M8 62 V14 Q8 4 20 4 Q32 4 32 14 V62' fill='none' stroke='%239a9488' stroke-width='3'/><path d='M13 62 V17 Q13 9 20 9 Q27 9 27 17 V62' fill='none' stroke='%239a9488' stroke-width='2' opacity='.6'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400;0,600;1,400;1,600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--ground:#121314;--ink:#e6dfd1;--ash:#9a9488;--rule:#2a2b2e;--dilbat:#d4a94e;--panel:#17181a;--mark:#e6dfd1}
+:root[data-theme="light"]{--ground:#f3f2ee;--ink:#1c1c1e;--ash:#6b665d;--rule:#d9d6cf;--dilbat:#8a5f0c;--panel:#eceae4;--mark:#1c1c1e}
+@media (prefers-color-scheme: light){:root:not([data-theme="dark"]){--ground:#f3f2ee;--ink:#1c1c1e;--ash:#6b665d;--rule:#d9d6cf;--dilbat:#8a5f0c;--panel:#eceae4;--mark:#1c1c1e}}
+*{box-sizing:border-box}
+html{background:var(--ground)}
+body{margin:0;background:var(--ground);color:var(--ink);font-family:"Source Serif 4",Georgia,serif;font-size:19px;line-height:1.62}
+.mono{font-family:"IBM Plex Mono",ui-monospace,Menlo,monospace;font-size:12px;letter-spacing:.06em;color:var(--ash)}
+.up{text-transform:uppercase}
+
+nav.top{display:flex;flex-wrap:nowrap;gap:12px 22px;align-items:center;padding:14px 24px;border-bottom:1px solid var(--rule)}
+nav.top a,nav.top button{white-space:nowrap}
+nav.top .brand{font-family:"Source Serif 4",serif;font-size:18px;font-weight:600;font-variant:small-caps;letter-spacing:.08em;color:var(--ink);display:flex;align-items:center;gap:12px;text-decoration:none;flex:none}
+nav.top .brand .niche{width:14px;height:22px;color:var(--ash);flex:none}
+nav.top .links{position:relative;display:flex;gap:22px;min-width:0;overflow-x:auto;scrollbar-width:none;padding:3px 0}
+nav.top .links::-webkit-scrollbar{display:none}
+nav.top a.l{text-decoration:none;color:var(--ash);padding-bottom:2px;border-bottom:1px solid transparent}
+nav.top a.l:hover{color:var(--dilbat)}
+nav.top a.l.on{color:var(--dilbat);border-bottom-color:var(--dilbat)}
+nav.top .sp{flex:1}
+nav.top button{background:none;border:1px solid var(--rule);color:var(--ash);cursor:pointer;padding:3px 9px;font:inherit;flex:none}
+@media (max-width:700px){nav.top{flex-wrap:wrap;gap:0 16px;padding:12px 16px 0}nav.top .links{order:3;flex:0 0 calc(100% + 32px);margin:0 -16px;padding:10px 40px 12px 16px;-webkit-mask-image:linear-gradient(to right,#000 calc(100% - 36px),transparent);mask-image:linear-gradient(to right,#000 calc(100% - 36px),transparent)}}
+a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible{outline:2px solid var(--dilbat);outline-offset:3px}
+.skip{position:absolute;left:-9999px;top:10px;z-index:30;background:var(--ground);color:var(--dilbat);padding:6px 10px;border:1px solid var(--dilbat);text-decoration:none}
+.skip:focus{left:12px}
+
+main{max-width:calc(34em + 96px);margin:0 auto;padding:34px 48px 120px}
+h1{font-size:34px;font-weight:600;line-height:1.15;margin:0 0 10px}
+h1.small{font-size:28px}
+h2{font-size:17px;font-weight:600;font-variant:small-caps;letter-spacing:.08em;margin:44px 0 10px;color:var(--ink)}
+p{margin:0 0 1em}
+p.lead{font-size:21px;line-height:1.5}
+p.quiet,.quiet{color:var(--ash)}
+a{color:var(--dilbat)}
+a.plain{color:inherit;text-decoration:none}
+a.plain:hover{color:var(--dilbat)}
+a.nm{color:inherit;text-decoration:none;border-bottom:1px dotted var(--ash);cursor:pointer}
+a.nm:hover{color:var(--dilbat);border-bottom-color:var(--dilbat)}
+.parts{list-style:none;padding:0;margin:0;border-top:1px solid var(--rule)}
+.parts li{border-bottom:1px solid var(--rule)}
+.parts a{display:grid;grid-template-columns:64px 1fr;gap:0 16px;padding:14px 0;color:inherit;text-decoration:none}
+.parts a:hover .t{color:var(--dilbat)}
+.parts .n{padding-top:6px}
+.parts .t{font-size:21px;font-weight:600}
+.parts .s{font-size:17px;color:var(--ash);margin-top:2px}
+.parts .m{margin-top:4px}
+/* the front door: the one ornament once, the way in, how deep it goes, then the apparatus as a quiet list */
+.door{margin:0 0 16px}
+.door .niche{display:block;width:40px;height:64px;color:var(--ash)}
+p.begin{margin:26px 0 10px;font-size:21px;font-weight:600;line-height:1.4}
+p.begin a{text-decoration:none;border-bottom:1px solid var(--dilbat)}
+p.depth{font-size:17px;line-height:1.5;margin:0 0 1.6em}
+.deeper{list-style:none;padding:0;margin:0;border-top:1px solid var(--rule)}
+.deeper li{border-bottom:1px solid var(--rule)}
+.deeper a{display:block;padding:14px 0;color:inherit;text-decoration:none}
+.deeper a:hover .t{color:var(--dilbat)}
+.deeper .t{display:block;font-size:19px;font-weight:600}
+.deeper .s{display:block;font-size:16px;color:var(--ash);margin-top:2px}
+.colophon{margin-top:44px;font-size:16px}
+@media (max-width:700px){main{padding:22px 16px 100px}body{font-size:18px}h1{font-size:28px}p.lead{font-size:19px;line-height:1.55}
+.door .niche{width:30px;height:48px}p.begin{font-size:19px}.parts a{grid-template-columns:1fr;gap:2px 0}.parts .n{padding-top:0}}
+.crumb{margin-bottom:8px}
+.story p{margin:0 0 1em}
+.told{margin:6px 0 2px}
+.margin{margin:0 0 1.2em 2em}
+.margin:before{content:"~ ";color:var(--dilbat)}
+.people{border-top:1px solid var(--rule)}
+.people details{border-bottom:1px solid var(--rule);padding:10px 0}
+.people summary{cursor:pointer;list-style:none;display:flex;align-items:baseline;gap:12px}
+.people summary::-webkit-details-marker{display:none}
+.people summary .t{font-size:19px;font-weight:600}
+.people summary:hover .t{color:var(--dilbat)}
+.people summary .bar{height:8px;background:var(--mark);opacity:.85;border-radius:1px;flex:none}
+.people summary .m{margin-left:auto;white-space:nowrap}
+.people .rec{padding:10px 0 4px 0}
+.people .rec .q{margin:0 0 3px;font-size:17px}
+.people .rec .q.f{font-style:italic}
+.people .rec .c{margin:0}
+.people .rec .c .tag{color:var(--dilbat)}
+.pn{display:flex;justify-content:space-between;gap:20px;margin-top:60px;padding-top:16px;border-top:1px solid var(--rule)}
+.pn a{text-decoration:none;font-size:16px}
+.doc-body h2{font-size:22px;font-variant:normal;letter-spacing:0;margin:1.6em 0 .5em}
+.doc-body h3{font-size:19px;font-weight:600;margin:1.4em 0 .4em}
+.doc-body h4,.doc-body h5,.doc-body h6{font-size:17px;font-style:italic;font-weight:600;margin:1.2em 0 .4em}
+.doc-body p.margin{margin:-.6em 0 1.2em 2em;font-size:12px}
+.doc-body p.indent{margin-left:2em;color:var(--ash)}
+.doc-body blockquote{margin:0 0 1em 1.4em;padding-left:1em;border-left:2px solid var(--rule)}
+.doc-body ul,.doc-body ol{padding-left:1.4em}
+.doc-body hr{border:0;border-top:1px solid var(--rule);margin:2em 0}
+.doc-body .tbl{overflow-x:auto;margin:0 0 1.2em}
+.doc-body table{border-collapse:collapse;font-size:15px;line-height:1.45;min-width:100%}
+.doc-body th,.doc-body td{border-bottom:1px solid var(--rule);padding:6px 10px 6px 0;text-align:left;vertical-align:top}
+.doc-body th{font-weight:600;font-size:13px;font-family:"IBM Plex Mono",monospace;color:var(--ash);text-transform:uppercase}
+.doc-body code{font-family:"IBM Plex Mono",monospace;font-size:14px;color:var(--ash)}
+.doc-body pre{font-family:"IBM Plex Mono",monospace;font-size:13px;white-space:pre-wrap;background:var(--panel);padding:12px 14px;border:1px solid var(--rule)}
+.chapters{list-style:none;padding:0;margin:0;border-top:1px solid var(--rule)}
+.chapters li{display:grid;grid-template-columns:64px 1fr auto;gap:0 16px;padding:12px 0;border-bottom:1px solid var(--rule);align-items:baseline}
+.chapters .t{font-size:19px}
+.chapters a.t{text-decoration:none;color:inherit}
+.chapters a.t:hover{color:var(--dilbat)}
+/* sources and themes */
+.srcs{list-style:none;padding:0;margin:0 0 10px;border-top:1px solid var(--rule)}
+.srcs li{border-bottom:1px solid var(--rule)}
+.srcs a{display:block;padding:10px 0;color:inherit;text-decoration:none}
+.srcs a:hover .t{color:var(--dilbat)}
+.srcs .t{font-size:18px;font-weight:600;display:block}
+.srcs .s{font-size:15px;color:var(--ash);display:block}
+.srcs .m{display:block;margin-top:2px}
+.lines .rec{border-top:1px solid var(--rule);padding:10px 0}
+.lines .rec .q{margin:0 0 4px;font-size:17px}
+.lines .rec .q.f{font-style:italic}
+.lines .rec .c{margin:0 0 4px}
+.lines .rec .c .tag{color:var(--dilbat)}
+.lines .rec .meta{font-size:15px;margin:0;line-height:1.5}
+.lines .rec .meta .mono{margin-right:4px}
+.lines h3{font-size:19px;font-weight:600;margin:28px 0 6px}
+.lines details{border-bottom:1px solid var(--rule);padding:8px 0}
+.lines summary{cursor:pointer;list-style:none;display:flex;gap:12px;align-items:baseline}
+.lines summary::-webkit-details-marker{display:none}
+.lines summary .t{font-size:19px;font-weight:600}
+.lines summary .m{margin-left:auto}
+/* the work */
+.work table{border-collapse:collapse;width:100%;font-size:16px}
+.work td,.work th{border-bottom:1px solid var(--rule);padding:5px 8px 5px 0;text-align:left;vertical-align:top;font-weight:400}
+.work td.n,.work th.n{text-align:right;font-family:"IBM Plex Mono",monospace;font-size:13px;color:var(--ash);white-space:nowrap}
+.work h2{margin-top:34px}
+/* the drawer */
+#drawer{position:fixed;top:0;right:0;height:100%;width:440px;max-width:100%;background:var(--panel);border-left:1px solid var(--rule);transform:translateX(100%);transition:transform 180ms ease-out;overflow-y:auto;padding:18px 22px 60px;z-index:20}
+#drawer.open{transform:none}
+@media (prefers-reduced-motion: reduce){#drawer{transition:none}}
+#drawer .close{position:absolute;top:12px;right:16px;cursor:pointer;background:none;border:0;color:var(--ash);font:inherit;font-size:20px}
+#drawer h3{font-size:20px;font-weight:600;margin:4px 0 2px}
+#drawer p{font-size:16px}
+#drawer ul{padding-left:18px;margin:4px 0 12px}
+#drawer li{font-size:15px;margin:2px 0}
+#scrim{position:fixed;inset:0;display:none;z-index:10}
+#scrim.on{display:block}
+@media (max-width:700px){#drawer{top:auto;bottom:0;height:85%;width:100%;border-left:0;border-top:1px solid var(--rule);transform:translateY(100%)}#drawer.open{transform:none}}
+</style>
+</head>
+<body>
+<a class="skip mono up" href="#main">Skip to the text</a><nav class="top mono up"><a class="brand" href="../index.html"><svg class="niche" viewBox="0 0 40 64" aria-hidden="true"><path d="M8 62 V14 Q8 4 20 4 Q32 4 32 14 V62" fill="none" stroke="currentColor" stroke-width="1.2"/><path d="M13 62 V17 Q13 9 20 9 Q27 9 27 17 V62" fill="none" stroke="currentColor" stroke-width="0.8" opacity=".6"/></svg><span>Bhāravataraṇa</span></a><div class="links"><a class="l" href="../index.html">Home</a><a class="l" href="../story/the-horses-foot.html">The story</a><a class="l" href="../chapters/index.html">Chapters</a><a class="l on" href="../sources.html">Sources</a><a class="l" href="../themes.html">Themes</a><a class="l" href="../figures.html">Figures</a><a class="l" href="../research.html">Research</a><a class="l" href="../wall.html">The wall</a><a class="l" href="../how.html">How it was made</a></div><span class="sp"></span><button id="theme" class="mono up" type="button">light / dark</button></nav><script>(function(){var a=document.querySelector("nav.top .links a.on");if(a){var l=a.parentNode;if(l.scrollWidth>l.clientWidth)l.scrollLeft=Math.max(0,a.offsetLeft-16);}})();</script><main id="main"><p class="crumb mono up"><a class="plain" href="../sources.html">The sources</a> · Arabia and Islam</p><h1 class="small">The Qurʾān</h1><p class="lead quiet">Iblis who would not bow; Hārūt and Mārūt at Babylon; the jinn</p><p class="mono">Arabia and Islam · Arabic · seventh century AD</p><h2>Editions and translations used</h2><p>Sale 1734 <span class="mono">(4)</span>, Pickthall 1930 <span class="mono">(2)</span>, Van Noppen 1898; Sale 1734 <span class="mono">(1)</span>, Sale 1734; Rodwell 1861; original <span class="mono">(1)</span>, Sale 1734; original <span class="mono">(1)</span>, Bell <span class="mono">(1)</span>, Reeves 2015 <span class="mono">(1)</span></p><h2>Where it speaks in the story</h2><ul><li><a href="../story/the-horses-foot.html">The Horse&#x27;s Foot</a> <span class="mono">2 lines</span></li><li><a href="../story/going-down.html">Going Down</a> <span class="mono">1 line</span></li><li><a href="../story/the-gifts-of-the-smiths.html">The Gifts of the Smiths</a> <span class="mono">2 lines</span></li><li><a href="../story/the-cut.html">The Cut</a> <span class="mono">1 line</span></li><li><a href="../story/claimed.html">Claimed</a> <span class="mono">10 lines</span></li><li><a href="../story/awaiting.html">Awaiting</a> <span class="mono">2 lines</span></li></ul><h2>Figures it names</h2><p><a class="nm" data-name="al-uzza">al-ʿUzzā</a> <span class="mono">3</span>, <a class="nm" data-name="zahhak">Zahhāk</a> <span class="mono">2</span>, <a class="nm" data-name="pharaoh">Pharaoh</a> <span class="mono">2</span>, <a class="nm" data-name="harut-marut">Hārūt and Mārūt</a> <span class="mono">2</span>, <a class="nm" data-name="babylon">Babylon</a> <span class="mono">2</span>, <a class="nm" data-name="helel">Helel ben Shahar</a> <span class="mono">1</span>, <a class="nm" data-name="iblis">Iblis</a> <span class="mono">1</span>, <a class="nm" data-name="alilat">Alilat</a> <span class="mono">1</span>, <a class="nm" data-name="manat">Manat</a> <span class="mono">1</span>, <a class="nm" data-name="satan">Satan</a> <span class="mono">1</span>, <a class="nm" data-name="aphrodite">Aphrodite</a> <span class="mono">1</span>, <a class="nm" data-name="al-tarek">al Târek</a> <span class="mono">1</span>, <a class="nm" data-name="moses">Moses</a> <span class="mono">1</span>, <a class="nm" data-name="haman">Haman</a> <span class="mono">1</span></p><h2>Themes it tells</h2><p><a href="../themes/bright-one-came-down.html">The bright one who came down (the Morning Star)</a> <span class="mono">5</span>, <a href="../themes/path-names-family.html">Names become a possible family history (Atlas path 1)</a> <span class="mono">2</span>, <a href="../themes/claim-at-court.html">A claim to divinity brought before a court, with a term</a> <span class="mono">2</span>, <a href="../themes/bound-with-a-timer.html">The bound with a timer</a> <span class="mono">2</span>, <a href="../themes/would-not-bow.html">The one who would not bow</a> <span class="mono">1</span>, <a href="../themes/confusion-of-tongues.html">The confusion of tongues (why one god has many names; Plate A opens here)</a> <span class="mono">1</span>, <a href="../themes/two-files.html">One deed, two verdicts (a flip; Plate D)</a> <span class="mono">1</span>, <a href="../themes/power-before-permission.html">Power that reaches heaven before permission does (Triśaṅku, Sun Wukong)</a> <span class="mono">1</span>, <a href="../themes/teachers-of-the-arts.html">The teachers of the arts</a> <span class="mono">1</span></p><h2>In the research</h2><p><a href="../research.html?q=The Qurʾān">Search the fifty research documents for "The Qurʾān"</a></p><h2>The lines (12)</h2><p class="quiet" style="font-size:16px">A line in italics is not yet checked against the printed book, or is our own translation; a line in copyright is cut to a fragment. The id at the end is the ledger record.</p><div class="people lines"><div class="rec"><p class="q">“Ye speedy Spirits, stay our chariot now, / God&#x27;s Morning-star in its full zenith stands; / Its height is reached; and lo! the moment comes / When Lucifer must set before this star, / This double star that rises from below / And seeks the way above, to tarnish Heaven / With earthly glow. No more should ye adorn / Proud Lucifer&#x27;s apparel with glittering crowns, / Nor gild his forehead with the glorious dawn / Of morning-star, to which Archangels kneel.&quot;
+&quot;Though Spirits may seem pre-eminent, above / All other beings, yet God hath decreed, / Even from eternity, that man shall high / Exalted be, even o&#x27;er the Angel world;&quot;
+&quot;... besides, / To be the first prince in some lower court / Is better than within the Blessed Light / To be the second, or even less.&quot;
+&quot;Thou erring Morning-star, oh! spare thyself!&quot;
+Beside it the dossier sets Iblīs, Qur&#x27;an 7:12 in Sale: &quot;I am more excellent than he: thou hast created me of fire, and hast created him of clay”</p><p class="c mono">F64. Vondel, Lucifer (1654): the double star rising from below; the decree that sets man above angels; the refusal.</p><p class="meta"><span class="mono">figures</span> <a class="nm" data-name="helel">Helel ben Shahar</a>, <a class="nm" data-name="iblis">Iblis</a><br><span class="mono">themes</span> <a href="../themes/would-not-bow.html">The one who would not bow</a>, <a href="../themes/bright-one-came-down.html">The bright one who came down (the Morning Star)</a><br><span class="mono">in the story</span> <a href="../story/claimed.html">Claimed</a> <span class="mono quiet">· cloud_troy_lucifer-0376</span></p></div><div class="rec"><p class="q">“What think ye of Allat, and Al Uzza, / and Manah, that other third goddess? / Have ye male children, and God female? / This, therefore, is an unjust partition. / They are no other than empty names, which ye and your fathers have named goddesses. GOD hath not revealed concerning them anything to authorize their worship.&quot;
+&quot;أَفَرَأَيْتُمُ اللَّاتَ وَالْعُزَّىٰ ۝ وَمَنَاةَ الثَّالِثَةَ الْأُخْرَىٰ ... إِنْ هِيَ إِلَّا أَسْمَاءٌ سَمَّيْتُمُوهَا أَنْتُمْ وَآبَاؤُكُمْ مَا أَنْزَلَ اللَّهُ بِهَا مِنْ سُلْطَانٍ&quot;
+Rodwell: &quot;These are mere names: ye and your fathers named them thus”</p><p class="c mono">F71. Qur&#x27;an 53:19-23: the names that are only names.</p><p class="meta"><span class="mono">figures</span> <a class="nm" data-name="alilat">Alilat</a>, <a class="nm" data-name="al-uzza">al-ʿUzzā</a>, <a class="nm" data-name="manat">Manat</a><br><span class="mono">themes</span> <a href="../themes/confusion-of-tongues.html">The confusion of tongues (why one god has many names; Plate A opens here)</a>, <a href="../themes/path-names-family.html">Names become a possible family history (Atlas path 1)</a><br><span class="mono">in the story</span> <a href="../story/the-cut.html">The Cut</a> · <a href="../story/claimed.html">Claimed</a> <span class="mono quiet">· cloud_troy_lucifer-0399</span></p></div><div class="rec"><p class="q">“We have sent no apostle, or prophet, before thee, but, when he read, Satan suggested some error in his reading. But GOD shall make void that which Satan hath suggested: then shall GOD confirm his signs; for GOD is knowing and wise.&quot;
+&quot;وَمَا أَرْسَلْنَا مِنْ قَبْلِكَ مِنْ رَسُولٍ وَلَا نَبِيٍّ إِلَّا إِذَا تَمَنَّىٰ أَلْقَى الشَّيْطَانُ فِي أُمْنِيَّتِهِ فَيَنْسَخُ اللَّهُ مَا يُلْقِي الشَّيْطَانُ ثُمَّ يُحْكِمُ اللَّهُ آيَاتِهِ”</p><p class="c mono">F73. Qur&#x27;an 22:52: God cancels what Satan casts.</p><p class="meta"><span class="mono">figures</span> <a class="nm" data-name="satan">Satan</a><br><span class="mono">themes</span> <a href="../themes/two-files.html">One deed, two verdicts (a flip; Plate D)</a><br><span class="mono">in the story</span> <a href="../story/the-gifts-of-the-smiths.html">The Gifts of the Smiths</a> · <a href="../story/claimed.html">Claimed</a> <span class="mono quiet">· cloud_troy_lucifer-0410</span></p></div><div class="rec"><p class="q">“the most mighty”</p><p class="c mono">F74. Sale&#x27;s Preliminary Discourse: al-Uzza, &quot; … &quot;; a Venus temple built by Dahac at Sanaa. <span class="tag">sorted by its neighbours in the brief</span></p><p class="meta"><span class="mono">figures</span> <a class="nm" data-name="al-uzza">al-ʿUzzā</a><br><span class="mono">in the story</span> <a href="../story/claimed.html">Claimed</a> <span class="mono quiet">· cloud_troy_lucifer-0414</span></p></div><div class="rec"><p class="q">“Al Uzza, as some affirm, was the idol of the tribes of Koreish and Kenânah, and part of the tribe of Salim: others tell us it was a tree called the Egyptian thorn, or acacia, worshipped by the tribe of Ghatfân ... Khâled Ebn Walîd being sent by Mohammed in the eighth year of the Hejra to destroy this idol, demolished the chapel, and cutting down this tree or image, burnt it: he also slew the priestess, who ran out with her hair dishevelled, and her hands on her head as a suppliant. ... The name of this deity is derived from the root azza, and signifies the most mighty.&quot;
+&quot;... one of which in particular, called Beit Ghomdân, was built in Sanaa, the metropolis of Yaman, by Dahac, to the honour of al Zoharah or the planet Venus, and was demolished by the Khalîf Othman; by whose murder was fulfilled the prophetical inscription set, as is reported, over this temple, viz., &quot;Ghomdân, he who destroyeth thee shall be slain.&quot;”</p><p class="c mono">F74. Sale&#x27;s Preliminary Discourse: al-Uzza, &quot;the most mighty&quot;; a Venus temple built by Dahac at Sanaa.</p><p class="meta"><span class="mono">figures</span> <a class="nm" data-name="aphrodite">Aphrodite</a>, <a class="nm" data-name="zahhak">Zahhāk</a>, <a class="nm" data-name="al-uzza">al-ʿUzzā</a><br><span class="mono">themes</span> <a href="../themes/bright-one-came-down.html">The bright one who came down (the Morning Star)</a><br><span class="mono">in the story</span> <a href="../story/claimed.html">Claimed</a> <span class="mono quiet">· cloud_troy_lucifer-0415</span></p></div><div class="rec"><p class="q">“star of piercing brightness”</p><p class="c mono">Text: Sale 1734, &quot;Preliminary Discourse&quot; §1. VERIFIED. Sale on Sura 86&#x27;s &quot; … &quot;: one exegete &quot;supposes to be the morning star (peculiarly called al Târek, or the appearing by nights)&quot;. Guardrail: &quot;a label should say &quot;Sale&#x27;s Dahac&quot;, not &quot;the Shahnameh says&quot;.&quot; PD: Pre-1930.</p><p class="meta"><span class="mono">themes</span> <a href="../themes/bright-one-came-down.html">The bright one who came down (the Morning Star)</a><br><span class="mono">in the story</span> <a href="../story/claimed.html">Claimed</a> <span class="mono quiet">· cloud_troy_lucifer-0416</span></p></div><div class="rec"><p class="q">“supposes to be the morning star (peculiarly called al Târek, or the appearing by nights)”</p><p class="c mono">Text: Sale 1734, &quot;Preliminary Discourse&quot; §1. VERIFIED. Sale on Sura 86&#x27;s &quot;star of piercing brightness&quot;: one exegete &quot; … &quot;. Guardrail: &quot;a label should say &quot;Sale&#x27;s Dahac&quot;, not &quot;the Shahnameh says&quot;.&quot; PD: Pre-1930.</p><p class="meta"><span class="mono">figures</span> <a class="nm" data-name="al-tarek">al Târek</a><br><span class="mono">themes</span> <a href="../themes/bright-one-came-down.html">The bright one who came down (the Morning Star)</a>, <a href="../themes/path-names-family.html">Names become a possible family history (Atlas path 1)</a><br><span class="mono">in the story</span> <a href="../story/claimed.html">Claimed</a> <span class="mono quiet">· cloud_troy_lucifer-0417</span></p></div><div class="rec"><p class="q">“I am your Lord the Highest”</p><p class="c mono">F29. Pharaoh: &quot; … &quot;, the tower, the sea, the body kept. <span class="tag">sorted by its neighbours in the brief</span></p><p class="meta"><span class="mono">figures</span> <a class="nm" data-name="pharaoh">Pharaoh</a><br><span class="mono">themes</span> <a href="../themes/claim-at-court.html">A claim to divinity brought before a court, with a term</a><br><span class="mono">in the story</span> <a href="../story/claimed.html">Claimed</a> <span class="mono quiet">· u13-0348</span></p></div><div class="rec"><p class="q">“&quot;And proclaimed: &quot;I (Pharaoh) am your Lord the Highest.&quot;&quot; (79:24; Arabic فَقَالَ أَنَا۠ رَبُّكُمُ ٱلْأَعْلَىٰ)
+&quot;And Pharaoh said: O chiefs! I know not that ye have a god other than me, so kindle for me (a fire), O Haman, to bake the mud; and set up for me a lofty tower in order that I may survey the god of Moses; and lo! I deem him of the liars.&quot; (28:38)
+&quot;What! Now! When hitherto thou hast rebelled and been of the wrong-doers? But this day We save thee in thy body that thou mayst be a portent for those after thee.&quot; (10:91-92)”</p><p class="c mono">F29. Pharaoh: &quot;I am your Lord the Highest&quot;, the tower, the sea, the body kept.</p><p class="meta"><span class="mono">figures</span> <a class="nm" data-name="moses">Moses</a>, <a class="nm" data-name="pharaoh">Pharaoh</a>, <a class="nm" data-name="haman">Haman</a><br><span class="mono">themes</span> <a href="../themes/claim-at-court.html">A claim to divinity brought before a court, with a term</a>, <a href="../themes/power-before-permission.html">Power that reaches heaven before permission does (Triśaṅku, Sun Wukong)</a><br><span class="mono">in the story</span> <a href="../story/claimed.html">Claimed</a> <span class="mono quiet">· u13-0349</span></p></div><div class="rec"><p class="q">“what had been sent down to the two angels in Babel, Hārūt …”</p><p class="c mono">F23. The two angels at Babylon. &quot; … &quot;. The exegetes&#x27; ending: they are sent to Babylon, &quot;suspended in iron chains, upside-down, flapping their wings&quot;. <span class="tag">still in copyright, so only a fragment</span></p><p class="meta"><span class="mono">figures</span> <a class="nm" data-name="harut-marut">Hārūt and Mārūt</a>, <a class="nm" data-name="babylon">Babylon</a><br><span class="mono">themes</span> <a href="../themes/teachers-of-the-arts.html">The teachers of the arts</a>, <a href="../themes/bright-one-came-down.html">The bright one who came down (the Morning Star)</a><br><span class="mono">in the story</span> <a href="../story/going-down.html">Going Down</a> · <a href="../story/the-gifts-of-the-smiths.html">The Gifts of the Smiths</a> · <a href="../story/claimed.html">Claimed</a> <span class="mono quiet">· u5-0147</span></p></div><div class="rec"><p class="q">“suspended in iron chains, upside-down, flapping their wings”</p><p class="c mono">F23. The two angels at Babylon. &quot;what had been sent down to the two angels in Babel, Hārūt and Mārūt; they do not teach anyone without first saying: We are only a temptation, so do not disbelieve&quot;. The exegetes&#x27; ending: they are sent to Babylon, &quot; … &quot;. <span class="tag">still in copyright, so only a fragment</span></p><p class="meta"><span class="mono">figures</span> <a class="nm" data-name="harut-marut">Hārūt and Mārūt</a>, <a class="nm" data-name="babylon">Babylon</a><br><span class="mono">themes</span> <a href="../themes/bound-with-a-timer.html">The bound with a timer</a><br><span class="mono">in the story</span> <a href="../story/the-horses-foot.html">The Horse&#x27;s Foot</a> · <a href="../story/awaiting.html">Awaiting</a> <span class="mono quiet">· u5-0148</span></p></div><div class="rec"><p class="q">“&quot;until the day of the known time&quot; (*ilā yawm al-waqt al-maʿlūm*)”</p><p class="c mono"></p><p class="meta"><span class="mono">figures</span> <a class="nm" data-name="zahhak">Zahhāk</a><br><span class="mono">themes</span> <a href="../themes/bound-with-a-timer.html">The bound with a timer</a><br><span class="mono">in the story</span> <a href="../story/the-horses-foot.html">The Horse&#x27;s Foot</a> · <a href="../story/awaiting.html">Awaiting</a> <span class="mono quiet">· u7-0173</span></p></div></div><div class="pn"><span><a href="../sources.html">← All sources</a></span><span></span></div></main><div id="scrim"></div><aside id="drawer" aria-live="polite"></aside><script>window.NAMES = {"babylon":{"name":"Babylon","type":"place","gloss":"the city of Marduk, the Gate of God, where the tongues were confused","forms":["Akkadian: Bābili","Akkadian: Bāb-ilim","Hebrew: Babel","Greek: Babylon","Avestan (Yt 5.29): Bawri"],"eq":["Abydenus: called Babylon for the confusion of tongues","Darmesteter: Avestan Bawri is Babylon"]},"zahhak":{"name":"Zahhāk","type":"power","gloss":"the three-headed dragon of the Avesta, the serpent-shouldered tyrant of the Shahnameh, bound under Damāvand until the end","forms":["Avestan: Aži Dahāka","Avestan (Darmesteter): Azi Dahaka","Pahlavi: Dahak","Pahlavi: Azi Dahak","Pahlavi: Bevarasp","Persian: Zahhāk","Persian (Warner): Biwarasp","Arabic (Ṭabarī): Ḍaḥḥāk","Arabic (Ṭabarī): Biwarasb","Armenian (Movses in Whiston's Latin): Byraspes Astyages","Armenian (Movses): Azdahak","English (Darmesteter): Zohak"],"eq":["Movses Khorenatsʻi: Byraspes is Astyages","Ṭabarī: typed as Nimrod and as Bukht Nasir","Darmesteter: turned at last into an Arab"]},"aphrodite":{"name":"Aphrodite","type":"god","gloss":"the goddess who mixed gods with mortal women, made to love Anchises, Venus in Latin","forms":["Greek: Aphrodite","Latin: Venus","Armenian (Movses): Astłik","Coptic (Pistis Sophia): Chosi","Greek (Memphis): the Foreign Aphrodite"],"eq":["Herodotus 1.131: the heavenly Aphrodite is Mylitta to the Assyrians and Alilat to the Arabians and Mitra to the Persians","Herodotus 4.59: the Scythians call Ourania Aphrodite Argimpasa","Justin the Gnostic: Omphale now is Babel or Venus","Movses: Astłik is the Armenian name for Aphrodite"]},"satan":{"name":"Satan","type":"power","gloss":"the accuser in the council of Job 1-2, the adversary, Satanail of 2 Enoch who as a fugitive made Sotona","forms":["Hebrew (Job 1-2): haśśāṭān","Greek and Latin: Satan","Slavonic (2 Enoch 18:3): Satanail","Old Russian (Primary Chronicle): Sathanael","Slavonic (2 Enoch 31:4): Sotona","Chinese (Xi'an stele 781): Suodan","Arabic (Qur'an): al-Shayṭān"],"eq":["the Cave of Treasures: Satan was their teacher","Prémare: Chiyou and Gonggong read as Lucifer","Kingsford in the SD: Satan the door-keeper of the Temple of the King"]},"moses":{"name":"Moses","type":"human","gloss":"the lawgiver; in Manetho via Josephus the priest Osarseph","forms":["Hebrew: Moses"],"eq":["Manetho via Josephus: Osarseph took the name Moses"]},"iblis":{"name":"Iblis","type":"power","gloss":"the angel who would not bow to Adam and was given a term; ʿAzāzīl before his fall in Ṭabarī","forms":["Arabic: Iblīs","Arabic: Iblis"],"eq":["Ṭabarī I:84: Iblis's name before his fall was ʿAzāzīl","Warner: the Shahnameh's Div is equivalent to Ahriman or Iblis","Hallaj: Iblis praised and damned"]},"harut-marut":{"name":"Hārūt and Mārūt","type":"power","gloss":"the two angels at Babylon who teach magic and hang until the Day (Qur'an 2:102)","forms":["Arabic (Qur'an 2:102): Hārūt and Mārūt","Middle Persian (Manichaean glossary): Harwōt Marwōt","Armenian (Agathangelos): hōrōtn ew mōrōtn","Armenian (Karin saying): Hawrot and Mawrot"],"eq":["the Manichaean glossary M 109 (Turfan): Amurdād Harwadād glossed Harwōt Marwōt","Lagarde 1866: Hārūt and Mārūt are Haurvatāt and Amərətāt","Horovitz (rival): Ariokh and Mariokh"]},"helel":{"name":"Helel ben Shahar","type":"power","gloss":"the shining one, son of Dawn, of Isaiah 14, who would ascend above the stars of God and is brought down; Heōsphoros in the Greek Bible and Lucifer in the Latin","forms":["Hebrew (Isaiah 14:12): Helel ben Shahar","Greek (LXX): Heōsphoros","Greek: Eosphoros","Greek: Phosphoros","Latin (Vulgate): lucifer","English (KJV 1611): Lucifer son of the morning","German (Steiner): Luzifer","German (Steiner): Lichtträger","Greek (Hesiod): Eosphorus","Hebrew (transliterated): Hêlēl","Italian (Dante): Lucifero"],"eq":["the SD (II p. 283 n.): Loki is identical with Lucifer (light-bringer)","the SD: Usanas-Sukra is Venus-Lucifer","Velikovsky: Azazel was a fallen star or Lucifer","Prémare: Chiyou and Gonggong read as Lucifer","Revelation 22:16: the bright and morning star is Christ","Hyginus 2.42: Venus's star is Lucifer nomine","the Epinomis 987b: Lucifer or Hesperus which is the same","Jerome: lucifer for hêlēl","Diogenes Laertius 9.23: Parmenides first asserted the identity of Hesperus and Lucifer","Pliny (Natural History 2): Venus is called Lucifer when it rises in the morning and Vesper when it shines in the west"]},"pharaoh":{"name":"Pharaoh","type":"power","gloss":"the title of the king of Egypt; the Pharaoh of Moses who proclaimed himself Lord the Highest, the great dragon of Ezekiel","forms":["English: Pharaoh","Arabic (Qur'an): Firʿawn"],"eq":[]},"haman":{"name":"Haman","type":"human","gloss":"Pharaoh's minister, bidden to bake the mud for a tower to the god of Moses (Qur'an 28:38)","forms":["Arabic (Qur'an): Hāmān","English (Pickthall): Haman"],"eq":[]},"alilat":{"name":"Alilat","type":"god","gloss":"the Arabian goddess whom Herodotus calls Urania, the other of the two gods the Arabians believe in","forms":["Greek (Herodotus","Macaulay): Alilat","Arabic: Allat"],"eq":["Herodotus 3.8: Urania they call Alilat"]},"al-uzza":{"name":"al-ʿUzzā","type":"god","gloss":"the Arabian goddess called the most mighty, whose tree and house Khâled Ebn Walîd destroyed","forms":["Arabic: al-ʿUzzā","English (Sale): Al Uzza","English: Ozza"],"eq":["Wellhausen: Uzza is meant when it is said that the Arabs worship Venus or the morning star"]},"al-tarek":{"name":"al Târek","type":"power","gloss":"the star of Sura 86, the appearing by nights, which some suppose the morning star (Sale)","forms":["Arabic (Sale): al Târek"],"eq":["Sale on Sura 86: al Târek or the appearing by nights is supposed to be the morning star"]},"manat":{"name":"Manat","type":"god","gloss":"the third goddess with Allat and al-ʿUzzā, called empty names in Sura 53","forms":["Arabic: Manat","English (Sale): Manah"],"eq":[]}}; window.WALLPATH = "../wall.html";</script><script>
+const $ = (s, el=document) => el.querySelector(s);
+const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const themeBtn = $('#theme'); if (themeBtn) themeBtn.addEventListener('click', () => {
+  const r = document.documentElement; const c = r.getAttribute('data-theme');
+  const dark = c ? c === 'dark' : !window.matchMedia('(prefers-color-scheme: light)').matches;
+  r.setAttribute('data-theme', dark ? 'light' : 'dark');
+});
+const drawer = $('#drawer'), scrim = $('#scrim'); const N = window.NAMES || {}; const WALL = window.WALLPATH || 'wall.html';
+function nameCard(id){
+  const c = N[id]; if (!c) return;
+  const forms = c.forms.length ? `<p class="mono up">Names in every tongue</p><ul>` + c.forms.map(f => `<li>${esc(f)}</li>`).join('') + `</ul>` : '';
+  const eq = c.eq.length ? `<p class="mono up">Who equated them</p><ul>` + c.eq.map(f => `<li>${esc(f)}</li>`).join('') + `</ul>` : '';
+  drawer.innerHTML = `<button class="close" aria-label="close">×</button><p class="mono">${esc(c.type)}</p><h3>${esc(c.name)}</h3><p>${esc(c.gloss)}</p>${forms}${eq}<p class="mono"><a href="${WALL}#name/${esc(id)}">this figure on the wall: its parts and its lines</a></p>`;
+  drawer.classList.add('open'); scrim.classList.add('on'); drawer.scrollTop = 0;
+  $('.close', drawer).addEventListener('click', closeDrawer);
+}
+function closeDrawer(){ drawer.classList.remove('open'); scrim.classList.remove('on'); }
+if (scrim) scrim.addEventListener('click', closeDrawer);
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeDrawer(); });
+document.querySelectorAll('a.nm').forEach(a => a.addEventListener('click', () => nameCard(a.dataset.name)));
+</script></body></html>

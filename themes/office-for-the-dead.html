@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Office for the dead (Gilgameš under the earth, the invested dead of the Fengshen) · Bhāravataraṇa</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-12 0 64 64'><path d='M8 62 V14 Q8 4 20 4 Q32 4 32 14 V62' fill='none' stroke='%239a9488' stroke-width='3'/><path d='M13 62 V17 Q13 9 20 9 Q27 9 27 17 V62' fill='none' stroke='%239a9488' stroke-width='2' opacity='.6'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400;0,600;1,400;1,600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--ground:#121314;--ink:#e6dfd1;--ash:#9a9488;--rule:#2a2b2e;--dilbat:#d4a94e;--panel:#17181a;--mark:#e6dfd1}
+:root[data-theme="light"]{--ground:#f3f2ee;--ink:#1c1c1e;--ash:#6b665d;--rule:#d9d6cf;--dilbat:#8a5f0c;--panel:#eceae4;--mark:#1c1c1e}
+@media (prefers-color-scheme: light){:root:not([data-theme="dark"]){--ground:#f3f2ee;--ink:#1c1c1e;--ash:#6b665d;--rule:#d9d6cf;--dilbat:#8a5f0c;--panel:#eceae4;--mark:#1c1c1e}}
+*{box-sizing:border-box}
+html{background:var(--ground)}
+body{margin:0;background:var(--ground);color:var(--ink);font-family:"Source Serif 4",Georgia,serif;font-size:19px;line-height:1.62}
+.mono{font-family:"IBM Plex Mono",ui-monospace,Menlo,monospace;font-size:12px;letter-spacing:.06em;color:var(--ash)}
+.up{text-transform:uppercase}
+
+nav.top{display:flex;flex-wrap:nowrap;gap:12px 22px;align-items:center;padding:14px 24px;border-bottom:1px solid var(--rule)}
+nav.top a,nav.top button{white-space:nowrap}
+nav.top .brand{font-family:"Source Serif 4",serif;font-size:18px;font-weight:600;font-variant:small-caps;letter-spacing:.08em;color:var(--ink);display:flex;align-items:center;gap:12px;text-decoration:none;flex:none}
+nav.top .brand .niche{width:14px;height:22px;color:var(--ash);flex:none}
+nav.top .links{position:relative;display:flex;gap:22px;min-width:0;overflow-x:auto;scrollbar-width:none;padding:3px 0}
+nav.top .links::-webkit-scrollbar{display:none}
+nav.top a.l{text-decoration:none;color:var(--ash);padding-bottom:2px;border-bottom:1px solid transparent}
+nav.top a.l:hover{color:var(--dilbat)}
+nav.top a.l.on{color:var(--dilbat);border-bottom-color:var(--dilbat)}
+nav.top .sp{flex:1}
+nav.top button{background:none;border:1px solid var(--rule);color:var(--ash);cursor:pointer;padding:3px 9px;font:inherit;flex:none}
+@media (max-width:700px){nav.top{flex-wrap:wrap;gap:0 16px;padding:12px 16px 0}nav.top .links{order:3;flex:0 0 calc(100% + 32px);margin:0 -16px;padding:10px 40px 12px 16px;-webkit-mask-image:linear-gradient(to right,#000 calc(100% - 36px),transparent);mask-image:linear-gradient(to right,#000 calc(100% - 36px),transparent)}}
+a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible{outline:2px solid var(--dilbat);outline-offset:3px}
+.skip{position:absolute;left:-9999px;top:10px;z-index:30;background:var(--ground);color:var(--dilbat);padding:6px 10px;border:1px solid var(--dilbat);text-decoration:none}
+.skip:focus{left:12px}
+
+main{max-width:calc(34em + 96px);margin:0 auto;padding:34px 48px 120px}
+h1{font-size:34px;font-weight:600;line-height:1.15;margin:0 0 10px}
+h1.small{font-size:28px}
+h2{font-size:17px;font-weight:600;font-variant:small-caps;letter-spacing:.08em;margin:44px 0 10px;color:var(--ink)}
+p{margin:0 0 1em}
+p.lead{font-size:21px;line-height:1.5}
+p.quiet,.quiet{color:var(--ash)}
+a{color:var(--dilbat)}
+a.plain{color:inherit;text-decoration:none}
+a.plain:hover{color:var(--dilbat)}
+a.nm{color:inherit;text-decoration:none;border-bottom:1px dotted var(--ash);cursor:pointer}
+a.nm:hover{color:var(--dilbat);border-bottom-color:var(--dilbat)}
+.parts{list-style:none;padding:0;margin:0;border-top:1px solid var(--rule)}
+.parts li{border-bottom:1px solid var(--rule)}
+.parts a{display:grid;grid-template-columns:64px 1fr;gap:0 16px;padding:14px 0;color:inherit;text-decoration:none}
+.parts a:hover .t{color:var(--dilbat)}
+.parts .n{padding-top:6px}
+.parts .t{font-size:21px;font-weight:600}
+.parts .s{font-size:17px;color:var(--ash);margin-top:2px}
+.parts .m{margin-top:4px}
+/* the front door: the one ornament once, the way in, how deep it goes, then the apparatus as a quiet list */
+.door{margin:0 0 16px}
+.door .niche{display:block;width:40px;height:64px;color:var(--ash)}
+p.begin{margin:26px 0 10px;font-size:21px;font-weight:600;line-height:1.4}
+p.begin a{text-decoration:none;border-bottom:1px solid var(--dilbat)}
+p.depth{font-size:17px;line-height:1.5;margin:0 0 1.6em}
+.deeper{list-style:none;padding:0;margin:0;border-top:1px solid var(--rule)}
+.deeper li{border-bottom:1px solid var(--rule)}
+.deeper a{display:block;padding:14px 0;color:inherit;text-decoration:none}
+.deeper a:hover .t{color:var(--dilbat)}
+.deeper .t{display:block;font-size:19px;font-weight:600}
+.deeper .s{display:block;font-size:16px;color:var(--ash);margin-top:2px}
+.colophon{margin-top:44px;font-size:16px}
+@media (max-width:700px){main{padding:22px 16px 100px}body{font-size:18px}h1{font-size:28px}p.lead{font-size:19px;line-height:1.55}
+.door .niche{width:30px;height:48px}p.begin{font-size:19px}.parts a{grid-template-columns:1fr;gap:2px 0}.parts .n{padding-top:0}}
+.crumb{margin-bottom:8px}
+.story p{margin:0 0 1em}
+.told{margin:6px 0 2px}
+.margin{margin:0 0 1.2em 2em}
+.margin:before{content:"~ ";color:var(--dilbat)}
+.people{border-top:1px solid var(--rule)}
+.people details{border-bottom:1px solid var(--rule);padding:10px 0}
+.people summary{cursor:pointer;list-style:none;display:flex;align-items:baseline;gap:12px}
+.people summary::-webkit-details-marker{display:none}
+.people summary .t{font-size:19px;font-weight:600}
+.people summary:hover .t{color:var(--dilbat)}
+.people summary .bar{height:8px;background:var(--mark);opacity:.85;border-radius:1px;flex:none}
+.people summary .m{margin-left:auto;white-space:nowrap}
+.people .rec{padding:10px 0 4px 0}
+.people .rec .q{margin:0 0 3px;font-size:17px}
+.people .rec .q.f{font-style:italic}
+.people .rec .c{margin:0}
+.people .rec .c .tag{color:var(--dilbat)}
+.pn{display:flex;justify-content:space-between;gap:20px;margin-top:60px;padding-top:16px;border-top:1px solid var(--rule)}
+.pn a{text-decoration:none;font-size:16px}
+.doc-body h2{font-size:22px;font-variant:normal;letter-spacing:0;margin:1.6em 0 .5em}
+.doc-body h3{font-size:19px;font-weight:600;margin:1.4em 0 .4em}
+.doc-body h4,.doc-body h5,.doc-body h6{font-size:17px;font-style:italic;font-weight:600;margin:1.2em 0 .4em}
+.doc-body p.margin{margin:-.6em 0 1.2em 2em;font-size:12px}
+.doc-body p.indent{margin-left:2em;color:var(--ash)}
+.doc-body blockquote{margin:0 0 1em 1.4em;padding-left:1em;border-left:2px solid var(--rule)}
+.doc-body ul,.doc-body ol{padding-left:1.4em}
+.doc-body hr{border:0;border-top:1px solid var(--rule);margin:2em 0}
+.doc-body .tbl{overflow-x:auto;margin:0 0 1.2em}
+.doc-body table{border-collapse:collapse;font-size:15px;line-height:1.45;min-width:100%}
+.doc-body th,.doc-body td{border-bottom:1px solid var(--rule);padding:6px 10px 6px 0;text-align:left;vertical-align:top}
+.doc-body th{font-weight:600;font-size:13px;font-family:"IBM Plex Mono",monospace;color:var(--ash);text-transform:uppercase}
+.doc-body code{font-family:"IBM Plex Mono",monospace;font-size:14px;color:var(--ash)}
+.doc-body pre{font-family:"IBM Plex Mono",monospace;font-size:13px;white-space:pre-wrap;background:var(--panel);padding:12px 14px;border:1px solid var(--rule)}
+.chapters{list-style:none;padding:0;margin:0;border-top:1px solid var(--rule)}
+.chapters li{display:grid;grid-template-columns:64px 1fr auto;gap:0 16px;padding:12px 0;border-bottom:1px solid var(--rule);align-items:baseline}
+.chapters .t{font-size:19px}
+.chapters a.t{text-decoration:none;color:inherit}
+.chapters a.t:hover{color:var(--dilbat)}
+/* sources and themes */
+.srcs{list-style:none;padding:0;margin:0 0 10px;border-top:1px solid var(--rule)}
+.srcs li{border-bottom:1px solid var(--rule)}
+.srcs a{display:block;padding:10px 0;color:inherit;text-decoration:none}
+.srcs a:hover .t{color:var(--dilbat)}
+.srcs .t{font-size:18px;font-weight:600;display:block}
+.srcs .s{font-size:15px;color:var(--ash);display:block}
+.srcs .m{display:block;margin-top:2px}
+.lines .rec{border-top:1px solid var(--rule);padding:10px 0}
+.lines .rec .q{margin:0 0 4px;font-size:17px}
+.lines .rec .q.f{font-style:italic}
+.lines .rec .c{margin:0 0 4px}
+.lines .rec .c .tag{color:var(--dilbat)}
+.lines .rec .meta{font-size:15px;margin:0;line-height:1.5}
+.lines .rec .meta .mono{margin-right:4px}
+.lines h3{font-size:19px;font-weight:600;margin:28px 0 6px}
+.lines details{border-bottom:1px solid var(--rule);padding:8px 0}
+.lines summary{cursor:pointer;list-style:none;display:flex;gap:12px;align-items:baseline}
+.lines summary::-webkit-details-marker{display:none}
+.lines summary .t{font-size:19px;font-weight:600}
+.lines summary .m{margin-left:auto}
+/* the work */
+.work table{border-collapse:collapse;width:100%;font-size:16px}
+.work td,.work th{border-bottom:1px solid var(--rule);padding:5px 8px 5px 0;text-align:left;vertical-align:top;font-weight:400}
+.work td.n,.work th.n{text-align:right;font-family:"IBM Plex Mono",monospace;font-size:13px;color:var(--ash);white-space:nowrap}
+.work h2{margin-top:34px}
+/* the drawer */
+#drawer{position:fixed;top:0;right:0;height:100%;width:440px;max-width:100%;background:var(--panel);border-left:1px solid var(--rule);transform:translateX(100%);transition:transform 180ms ease-out;overflow-y:auto;padding:18px 22px 60px;z-index:20}
+#drawer.open{transform:none}
+@media (prefers-reduced-motion: reduce){#drawer{transition:none}}
+#drawer .close{position:absolute;top:12px;right:16px;cursor:pointer;background:none;border:0;color:var(--ash);font:inherit;font-size:20px}
+#drawer h3{font-size:20px;font-weight:600;margin:4px 0 2px}
+#drawer p{font-size:16px}
+#drawer ul{padding-left:18px;margin:4px 0 12px}
+#drawer li{font-size:15px;margin:2px 0}
+#scrim{position:fixed;inset:0;display:none;z-index:10}
+#scrim.on{display:block}
+@media (max-width:700px){#drawer{top:auto;bottom:0;height:85%;width:100%;border-left:0;border-top:1px solid var(--rule);transform:translateY(100%)}#drawer.open{transform:none}}
+</style>
+</head>
+<body>
+<a class="skip mono up" href="#main">Skip to the text</a><nav class="top mono up"><a class="brand" href="../index.html"><svg class="niche" viewBox="0 0 40 64" aria-hidden="true"><path d="M8 62 V14 Q8 4 20 4 Q32 4 32 14 V62" fill="none" stroke="currentColor" stroke-width="1.2"/><path d="M13 62 V17 Q13 9 20 9 Q27 9 27 17 V62" fill="none" stroke="currentColor" stroke-width="0.8" opacity=".6"/></svg><span>Bhāravataraṇa</span></a><div class="links"><a class="l" href="../index.html">Home</a><a class="l" href="../story/the-horses-foot.html">The story</a><a class="l" href="../chapters/index.html">Chapters</a><a class="l" href="../sources.html">Sources</a><a class="l on" href="../themes.html">Themes</a><a class="l" href="../figures.html">Figures</a><a class="l" href="../research.html">Research</a><a class="l" href="../wall.html">The wall</a><a class="l" href="../how.html">How it was made</a></div><span class="sp"></span><button id="theme" class="mono up" type="button">light / dark</button></nav><script>(function(){var a=document.querySelector("nav.top .links a.on");if(a){var l=a.parentNode;if(l.scrollWidth>l.clientWidth)l.scrollLeft=Math.max(0,a.offsetLeft-16);}})();</script><main id="main"><p class="crumb mono up"><a class="plain" href="../themes.html">The themes</a> · Who may pass the door</p><h1 class="small">Office for the dead (Gilgameš under the earth, the invested dead of the Fengshen)</h1><p class="lead quiet">12 lines from 7 sources in 5 peoples.</p><h2>In the story</h2><p><a href="../story/the-elders.html">The Elders</a> <span class="mono">1</span> · <a href="../story/going-down.html">Going Down</a> <span class="mono">1</span> · <a href="../story/the-gifts-of-the-smiths.html">The Gifts of the Smiths</a> <span class="mono">1</span> · <a href="../story/hybrids.html">Hybrids</a> <span class="mono">1</span> · <a href="../story/the-burden.html">The Burden</a> <span class="mono">1</span> · <a href="../story/remedy.html">Remedy</a> <span class="mono">1</span> · <a href="../story/the-cut.html">The Cut</a> <span class="mono">1</span> · <a href="../story/claimed.html">Claimed</a> <span class="mono">8</span> · <a href="../story/awaiting.html">Awaiting</a> <span class="mono">7</span></p><h2>Who tells it</h2><ul><li><a href="../sources/china-other.html">Other Chinese texts</a> <span class="mono">3</span></li><li><a href="../sources/ugarit.html">The tablets of Ugarit (the Baal Cycle)</a> <span class="mono">3</span></li><li><a href="../sources/hermetica.html">The Hermetica: Poimandres and the Asclepius</a> <span class="mono">2</span></li><li><a href="../sources/gilgamesh.html">The Epic of Gilgamesh</a> <span class="mono">1</span></li><li><a href="../sources/hittite-treaties.html">The Hittite treaties and texts</a> <span class="mono">1</span></li><li><a href="../sources/isaiah.html">Isaiah</a> <span class="mono">1</span></li><li><a href="../sources/bible-other.html">Other books of the Hebrew Bible</a> <span class="mono">1</span></li></ul><h2>The lines, by people</h2><div class="people lines"><details open><summary><span class="t">Mesopotamia</span><span class="m mono">1 line</span></summary><div class="rec"><p class="q">“&quot;Enki answered An and Enlil: &quot;In those days, in those distant days, …”</p><p class="c mono">F19. The death of Gilgamesh (ETCSL 1.8.1.3, version from Me-Turan): the oath that shut the door, and Gilgameš made judge below. <span class="tag">still in copyright, so only a fragment</span></p><p class="meta"><span class="mono">figures</span> <a class="nm" data-name="anu">Anu</a>, <a class="nm" data-name="enki">Enki</a>, <a class="nm" data-name="enlil">Enlil</a>, <a class="nm" data-name="gilgamesh">Gilgameš</a>, <a class="nm" data-name="ziusudra">Ziusudra</a>, <a class="nm" data-name="dumuzid">Dumuzid</a>, <a class="nm" data-name="humbaba">Humbaba</a>, <a class="nm" data-name="ningishzida">Ninjiczida</a><br><span class="mono">themes</span> <a href="../themes/life-withheld.html">Deathless life withheld (Adam, Adapa, Ninigi)</a>, <a href="../themes/office-for-the-dead.html">Office for the dead (Gilgameš under the earth, the invested dead of the Fengshen)</a>, <a href="../themes/the-cut.html">The cut between heaven and earth</a>, <a href="../themes/flood-survivor.html">The flood survivor</a><br><span class="mono">in the story</span> <a href="../story/remedy.html">Remedy</a> · <a href="../story/the-cut.html">The Cut</a> · <a href="../story/claimed.html">Claimed</a> <span class="mono quiet">· u1r-0108</span></p></div></details><details open><summary><span class="t">Anatolia and the Levant</span><span class="m mono">4 lines</span></summary><div class="rec"><p class="q">“The doorkeeper has opened the seven doors, has unlocked the seven bolts. …”</p><p class="c mono"> <span class="tag">still in copyright, so only a fragment</span></p><p class="meta"><span class="mono">figures</span> <a class="nm" data-name="telipinu">Telipinu</a><br><span class="mono">themes</span> <a href="../themes/office-for-the-dead.html">Office for the dead (Gilgameš under the earth, the invested dead of the Fengshen)</a><br><span class="mono">in the story</span> <a href="../story/the-burden.html">The Burden</a> <span class="mono quiet">· u8-0233</span></p></div><div class="rec"><p class="q f">*ksi nqmd ibky / w ydmʿ hdm pʿnh*, &quot;Throne of Niqmaddu, be wept; and let tears be shed on the footstool of his feet&quot;</p><p class="c mono">12. The throne wept, the king sent down to the Rephaim. Ugaritic royal funeral liturgy, KTU 1.161.13-14, 20-22, gloss after Pardee 87 (Ritual and Cult at Ugarit, 2002). <span class="tag">our translation</span></p><p class="meta"><span class="mono">figures</span> <a class="nm" data-name="rephaim">Rephaim</a>, <a class="nm" data-name="niqmaddu">Niqmaddu</a><br><span class="mono">themes</span> <a href="../themes/office-for-the-dead.html">Office for the dead (Gilgameš under the earth, the invested dead of the Fengshen)</a>, <a href="../themes/road-of-the-dead-kings.html">The descent through the dead kings of Mesopotamia, and the gatherers&#x27; chain beyond it</a><br><span class="mono">in the story</span> <a href="../story/claimed.html">Claimed</a> · <a href="../story/awaiting.html">Awaiting</a> <span class="mono quiet">· u8-0244</span></p></div><div class="rec"><p class="q f">*ảrṣ rd / w špl ʿpr*, &quot;into the earth descend, and go low into the dust&quot;</p><p class="c mono"> <span class="tag">our translation · sorted by its neighbours in the brief</span></p><p class="meta"><span class="mono">themes</span> <a href="../themes/office-for-the-dead.html">Office for the dead (Gilgameš under the earth, the invested dead of the Fengshen)</a><br><span class="mono">in the story</span> <a href="../story/claimed.html">Claimed</a> · <a href="../story/awaiting.html">Awaiting</a> <span class="mono quiet">· u8-0245</span></p></div><div class="rec"><p class="q f">*rpu mlk ʿlm*, &quot;Rapiu, king of eternity&quot;, *il yṯb bʿṯtrt / il ṯpṭ bhdrʿy*, &quot;the god who sits in Ashtaroth, the god who rules in Edrei&quot;</p><p class="c mono">14. The king of the elder dead at the foot of Hermon. KTU 1.108.1-3, gloss after Pardee; Joshua 12:4-5, KJV. <span class="tag">our translation</span></p><p class="meta"><span class="mono">figures</span> <a class="nm" data-name="rapiu">Rapiu</a><br><span class="mono">themes</span> <a href="../themes/office-for-the-dead.html">Office for the dead (Gilgameš under the earth, the invested dead of the Fengshen)</a><br><span class="mono">in the story</span> <a href="../story/awaiting.html">Awaiting</a> <span class="mono quiet">· u8-0250</span></p></div></details><details open><summary><span class="t">Hebrew Bible and Enoch</span><span class="m mono">2 lines</span></summary><div class="rec"><p class="q">“Og king of Bashan, which was of the remnant of the giants, that dwelt at Ashtaroth and at Edrei, And reigned in mount Hermon, and in Salcah, and in all Bashan”</p><p class="c mono"></p><p class="meta"><span class="mono">figures</span> <a class="nm" data-name="og">Og</a>, <a class="nm" data-name="hermon">Hermon</a>, <a class="nm" data-name="rephaim">Rephaim</a><br><span class="mono">themes</span> <a href="../themes/path-kindred-territory.html">Divine kindred becomes a sharing-out of the earth (Atlas path 3)</a>, <a href="../themes/office-for-the-dead.html">Office for the dead (Gilgameš under the earth, the invested dead of the Fengshen)</a><br><span class="mono">in the story</span> <a href="../story/going-down.html">Going Down</a> · <a href="../story/hybrids.html">Hybrids</a> · <a href="../story/awaiting.html">Awaiting</a> <span class="mono quiet">· u8-0251</span></p></div><div class="rec"><p class="q f">all the giants who ruled the earth were roused for you</p><p class="c mono">Beside it, Isaiah 14:9 in the Septuagint: συνηγέρθησάν σοι πάντες οἱ γίγαντες οἱ ἄρξαντες τῆς γῆς, &quot; … &quot;. <span class="tag">our translation</span></p><p class="meta"><span class="mono">figures</span> <a class="nm" data-name="rephaim">Rephaim</a><br><span class="mono">themes</span> <a href="../themes/office-for-the-dead.html">Office for the dead (Gilgameš under the earth, the invested dead of the Fengshen)</a><br><span class="mono">in the story</span> <a href="../story/claimed.html">Claimed</a> · <a href="../story/awaiting.html">Awaiting</a> <span class="mono quiet">· u8-0246</span></p></div></details><details open><summary><span class="t">Christian, Gnostic and Hermetic</span><span class="m mono">2 lines</span></summary><div class="rec"><p class="q">“For thy forebear, Asclepius, the first discoverer of medicine, to whom there is a temple [p. 382] hallowed on Libya’s Mount, hard by the shore of crocodiles, in which his cosmic man reposes, that is to say his body; for that the rest [of him], or better still, the whole (if that a man when wholly [plunged] in consciousness of life, be better), hath gone back home to heaven,—still furnishing, [but] now by his divinity, the sick with all the remedies which he was wont in days gone by to give by art of medicine.”</p><p class="c mono">F47. The Asclepius xxxvii § 3: Asclepius the forebear, first discoverer of medicine: his body in the temple on Libya&#x27;s Mount, the rest gone home to heaven.</p><p class="meta"><span class="mono">figures</span> <a class="nm" data-name="asclepius">Asclepius</a>, <a class="nm" data-name="hermes-trismegistus">Hermes Trismegistos</a><br><span class="mono">themes</span> <a href="../themes/office-for-the-dead.html">Office for the dead (Gilgameš under the earth, the invested dead of the Fengshen)</a><br><span class="mono">in the story</span> <a href="../story/claimed.html">Claimed</a> <span class="mono quiet">· hermetica-0156</span></p></div><div class="rec"><p class="q">“Hermes, which is the name of my forebear, whose home is in a place called after him, doth aid and guard all mortal [men] who come to him from every side.&quot;
+
+&quot;As for Osiris’ [spouse]; how many are the blessings that we know Isis bestows when she’s propitious; how many does she injure when she’s wrath!&quot;
+
+&quot;For that the terrene and the cosmic Gods are [p. 383] easily enraged, in that they are created and composed of the two natures.&quot;
+
+&quot;5. And for this cause it comes to pass that these are called the “sacred animals” by the Egyptians, and that each several state gives service to the souls of those whose souls have been made holy, while they were still alive; so that [the several states] are governed by the laws [of their peculiar sacred animals], and called after their names.&quot;
+
+&quot;It is because of this, Asclepius, those [animals] which are considered by some states deserving of their worship, in others are thought otherwise; and on account of this the states of the Egyptians wage with each other frequent war.”</p><p class="c mono">F48. The Asclepius xxxvii §§ 4-5: Hermes the forebear, whose home is called after him; Isis; the terrene Gods easily enraged; the sacred animals and the wars of the states.</p><p class="meta"><span class="mono">figures</span> <a class="nm" data-name="asclepius">Asclepius</a>, <a class="nm" data-name="hermes">Hermes</a>, <a class="nm" data-name="hermes-trismegistus">Hermes Trismegistos</a>, <a class="nm" data-name="isis">Isis</a>, <a class="nm" data-name="osiris">Osiris</a><br><span class="mono">themes</span> <a href="../themes/office-for-the-dead.html">Office for the dead (Gilgameš under the earth, the invested dead of the Fengshen)</a><br><span class="mono">in the story</span> <a href="../story/claimed.html">Claimed</a> <span class="mono quiet">· hermetica-0157</span></p></div></details><details open><summary><span class="t">China</span><span class="m mono">3 lines</span></summary><div class="rec"><p class="q">“Anciently, when Yaou put K&#x27;wăn to death on mount Yu, his spirit changed into a yellow bear, which entered into the abyss of Yu. He was under the Hea dynasty the assessor at its sacrifice to Heaven, and in fact the three dynasties all sacrificed to him. Tsin, though lord of covenants, has perhaps not yet sacrificed to him.”</p><p class="c mono">29. The bound father&#x27;s cult. Zuozhuan, Zhao 7 (scene of 535 BCE), tr. Legge, Chinese Classics V, 617.</p><p class="meta"><span class="mono">figures</span> <a class="nm" data-name="gun">Gun</a>, <a class="nm" data-name="yao">Yao</a><br><span class="mono">themes</span> <a href="../themes/office-for-the-dead.html">Office for the dead (Gilgameš under the earth, the invested dead of the Fengshen)</a>, <a href="../themes/two-files.html">One deed, two verdicts (a flip; Plate D)</a><br><span class="mono">in the story</span> <a href="../story/the-gifts-of-the-smiths.html">The Gifts of the Smiths</a> · <a href="../story/awaiting.html">Awaiting</a> <span class="mono quiet">· u7-0211</span></p></div><div class="rec"><p class="q f">&quot;I specially command Jiang Shang, according to the weight of each one&#x27;s kalpa and the rank of each one&#x27;s merit, to invest you as true gods of the eight divisions, each in charge of an office, set out through the circuit of heaven, to inspect the good and evil of the human world and to examine the merit and conduct of the three realms. Fortune and disaster you shall carry out; from now on you are freed from birth and death&quot;
+Chinese: 「禍福自爾等施行，生死從今超脫，有功之日，循序而遷」</p><p class="c mono">F16. The Investiture of the Gods, chapter 99: the war&#x27;s dead given the gods&#x27; offices. <span class="tag">our translation</span></p><p class="meta"><span class="mono">figures</span> <a class="nm" data-name="jiang-ziya">Jiang Ziya</a><br><span class="mono">themes</span> <a href="../themes/office-for-the-dead.html">Office for the dead (Gilgameš under the earth, the invested dead of the Fengshen)</a><br><span class="mono">in the story</span> <a href="../story/claimed.html">Claimed</a> · <a href="../story/awaiting.html">Awaiting</a> <span class="mono quiet">· u12-0516</span></p></div><div class="rec"><p class="q f">&quot;This wandering soul is Bai Jian, commander-in-chief of the Xuanyuan Emperor. In the great defeat of Chiyou I was struck into the sea by fire-weapons, and for a thousand years I have not been able to come out of my kalpa.&quot;
+&quot;Now I invest you as Pure Blessing God, head of the three realms and of the eight divisions of three hundred and sixty-five true gods.&quot;
+Chinese: 「因大破蚩尤，被火器打入海中，千年未能出劫」</p><p class="c mono">F17. The Investiture of the Gods, chapter 37: the first new god is a soldier of the elder war. <span class="tag">our translation</span></p><p class="meta"><span class="mono">figures</span> <a class="nm" data-name="chiyou">Chiyou</a>, <a class="nm" data-name="huangdi">Huangdi</a>, <a class="nm" data-name="bai-jian">Bai Jian</a><br><span class="mono">themes</span> <a href="../themes/office-for-the-dead.html">Office for the dead (Gilgameš under the earth, the invested dead of the Fengshen)</a>, <a href="../themes/elder-king-overthrown.html">The elder king overthrown</a>, <a href="../themes/thousand-years.html">A thousand years, and the theft of seventy</a><br><span class="mono">in the story</span> <a href="../story/the-elders.html">The Elders</a> · <a href="../story/claimed.html">Claimed</a> <span class="mono quiet">· u12-0517</span></p></div></details></div><div class="pn"><span><a href="../themes.html">← All themes</a></span><span></span></div></main><div id="scrim"></div><aside id="drawer" aria-live="polite"></aside><script>window.NAMES = {"enki":{"name":"Enki","type":"god","gloss":"the Sumerian god of the sweet deep at Eridu, Ea in Akkadian, who warns the flood hero and patrons the sages","forms":["Sumerian: Enki","Sumerian (epithet): Nudimmud","Akkadian: Ea","Akkadian (Enūma eliš VII 6): Ninshiku","English (Thompson): Nin-igi-azag","Greek (Damascius): Aus","English (George Smith in the SD): the god Hea"],"eq":["Berossus and Abydenus: the deity who warns the flood hero is Cronus","Damascius: Aus and Dauce are the parents of Belus","Enūma eliš VII: Ea gives Marduk his own name","Santillana and von Dechend: Oannes = Ea = Saturn"]},"enlil":{"name":"Enlil","type":"god","gloss":"the Sumerian sovereign of the earth, who decides the Flood and whose sleep mankind's din breaks","forms":["Sumerian: Enlil","Akkadian: Ellil","Sumerian (epithet): Nunamnir","Greek (Damascius): Illinus","Hittite (former gods): Ellil"],"eq":[]},"anu":{"name":"Anu","type":"god","gloss":"the Mesopotamian sky, An in Sumerian, who offers Adapa the food of life; second king of heaven in the Hurrian succession","forms":["Sumerian: An","Akkadian: Anu","cuneiform (Uruk List): {d}60","Hittite (Kumarbi song): Anu","Greek (Damascius): Anus"],"eq":[]},"dumuzid":{"name":"Dumuzid","type":"god","gloss":"the shepherd, a king before the Flood in the King List and the vanished god at heaven's gate in Adapa","forms":["Sumerian (King List): Dumuzid","Sumerian: Dumuzi","Akkadian (Adapa): Tammuz","Hebrew (Ezekiel 8:14): Tammuz","Arabic (Fihrist): Ta'uz"],"eq":[]},"ziusudra":{"name":"Ziusudra","type":"human","gloss":"the Sumerian flood hero, king of Šuruppag, granted life after the flood; Atra-ḫasīs and Ūta-napišti in Akkadian","forms":["Sumerian: Ziusudra","Sumerian (ETCSL): Zi-ud-sura","Akkadian (Atra-ḫasīs): Atra-ḫasīs","Akkadian (Gilgameš XI): Ūta-napišti","English (Thompson): Uta-Napishtim the Distant","Greek (Berossus via Polyhistor): Xisuthrus","Greek (Berossus in the briefs): Xisouthros","Greek (Abydenus): Sisithrus","Armenian (Movses Khorenatsʻi 1.6): Xisuthros"],"eq":["Gilgameš XI 197: Ūta-napišti is called Atra-ḫasīs","Clay 1922: Xisuthros is a transposition of Hasis-atra","Breshears: Xisuthrus is the Babylonian Noah of Berossus"]},"gilgamesh":{"name":"Gilgameš","type":"human","gloss":"the king of Uruk, two-thirds god, who lost the plant of life and became judge of the dead; in the Book of Giants a giant son of the Watchers","forms":["Sumerian (ETCSL): Gilgamec","Akkadian (eBL): Gilgāmeš","English (Thompson): Gilgamish","Greek (Aelian): Gilgamos","Aramaic (Book of Giants): glgmyš","English (George Smith in the SD): Isdubar"],"eq":[]},"humbaba":{"name":"Humbaba","type":"power","gloss":"the guardian of the Cedar Forest whom Gilgameš kills; in the Book of Giants the giant Hobabish","forms":["Sumerian: Huwawa","Akkadian: Humbaba","Aramaic (4Q530): Ḥobabiš","Manichaean (Turfan): Hōbābīš"],"eq":["u5 (argued there): the Book of Giants' Hobabish is Humbaba of the Cedar Forest"]},"hermes":{"name":"Hermes","type":"god","gloss":"the Greek messenger god, Mercury in Latin","forms":["Greek: Hermes","Latin: Mercury","Coptic (Pistis Sophia): Tarpetanouph"],"eq":["Zosimos: pairs Thoth with Hermes","the euhemerist file (u8): Faunus was called Hermes for the name of the wandering star","Caesar BG 6.17.1: the Gauls' chief god is Mercury the inventor of all the arts"]},"rapiu":{"name":"Rapiu","type":"power","gloss":"the eternal king of the Rephaim-shades at Ugarit","forms":["Ugaritic: Rapiu"],"eq":[]},"hermon":{"name":"Hermon","type":"place","gloss":"the mountain of the oath, where the two hundred came down; Sirion to the Sidonians and Senir to the Amorites","forms":["Hebrew: Ḥermon","Sidonian: Sirion","Amorite: Senir","Ethiopic Enoch (13:9): Sénésér","Hittite: Šariyana","Slavonic (2 Enoch): Ermon","Greek (Syncellus): Ardis the top of Mount Armon","Arabic: Jabal al-Shaykh"],"eq":[]},"rephaim":{"name":"Rephaim","type":"company","gloss":"the honoured royal dead of Ugarit, the shades of Isaiah 14:9 and the giant people of Deuteronomy","forms":["Ugaritic: rpum","Ugaritic: rpim qdmym","Hebrew: Rephaim","Hebrew: Rapha","Greek (LXX): gigantes"],"eq":["the Septuagint (2 Samuel 5:18): the Valley of the Titans","Genesis Rabbah 26:7: Emim Rephaim Gibborim Zamzummim Anakim Avvim Nephilim are one race"]},"og":{"name":"Og","type":"human","gloss":"the king of Bashan, the remnant of the Rephaim, son of Ahijah son of Shamhazai in b. Niddah 61a","forms":["Hebrew: Og","Aramaic (Targum): Og the Wicked","Arabic: ʿŪj ibn ʿAnāq"],"eq":["Pirqe de Rabbi Eliezer 16: Eliezer the steward of Abraham is made king Og"]},"osiris":{"name":"Osiris","type":"god","gloss":"the eldest of the Ennead, murdered by Seth and drowned, gathered by Isis, king in the Duat","forms":["Egyptian: Osiris","Egyptian: Osiris-Apis","Greek: Osorapis"],"eq":["Herodotus 2.42 and Plutarch 35: Osiris is Dionysus","Bryant: Noah is Osiris"]},"isis":{"name":"Isis","type":"god","gloss":"the advocate in the trial of Horus and Seth, who gathers Osiris and extracts Ra's secret name; teacher of the Egyptian letters (Isidore)","forms":["Egyptian: Isis"],"eq":["Herodotus: Isis is Demeter"]},"hermes-trismegistus":{"name":"Hermes Trismegistos","type":"human","gloss":"the thrice-great Hermes, a title borne by several sages across the flood in Abū Maʿshar, the first of them Enoch","forms":["Greek: Hermes Trismegistos","Arabic (Abū Maʿshar): the first Hermes","Greek (Gifford): Hermes Trismegistus"],"eq":["Philo of Byblos: Taautos is Thoth and Hermes Trismegistos","Abū Maʿshar: Enoch is Idris and the first Hermes","Abū Maʿshar as the scholars read him: Hushang is the first Hermes"]},"chiyou":{"name":"Chiyou","type":"power","gloss":"the bronze-headed iron-browed rebel with eighty-one brothers, first maker of disorder, killed by the Yellow Emperor and rumoured not dead","forms":["Chinese: Chiyou","English (Legge): Khih Yû","French (Chavannes): Tch'e-yeou","English (SD): Tchy-Yeoo","Chinese (Qi): the Lord of War"],"eq":["Ying Shao: an ancient Son of Heaven","Prémare: his eighty-one brothers are rebel angels and he is Lucifer"]},"gun":{"name":"Gun","type":"human","gloss":"the father of Yu, who stole the self-swelling soil and was bound on Feather Mountain","forms":["Chinese: Gun","English (Legge on the Shu): Khwăn","English (Legge on the Zuozhuan): K'wăn"],"eq":[]},"huangdi":{"name":"Huangdi","type":"human","gloss":"the Yellow Emperor, Xuanyuan, who killed Chiyou and rode up to heaven on a dragon at Dinghu with his palace women","forms":["Chinese: Huangdi","English: the Yellow Emperor","Chinese: Xuanyuan"],"eq":[]},"yao":{"name":"Yao","type":"human","gloss":"the sage sovereign of the flood age","forms":["Chinese: Yao","English (Legge): Yaou"],"eq":["Martini 1658: Yao as Janus as Noah"]},"jiang-ziya":{"name":"Jiang Ziya","type":"human","gloss":"the general sent down the mountain to invest the gods (Fengshen)","forms":["Chinese: Jiang Ziya","Chinese: Jiang Shang"],"eq":[]},"asclepius":{"name":"Asclepius","type":"god","gloss":"the healer god; in Philo of Byblos the eighth son of Sydyk, brother of the seven Kabeiroi","forms":["Greek (Philo of Byblos tr. Attridge): Asclepius","Greek: Asklepios"],"eq":[]},"ningishzida":{"name":"Ninjiczida","type":"god","gloss":"the god whose words weigh among the dead, who stands with Dumuzid at the door of Anu in Adapa","forms":["Sumerian (ETCSL): Ninjiczida","Akkadian (Adapa): Gizzida"],"eq":[]},"telipinu":{"name":"Telipinu","type":"god","gloss":"the Hittite god who walked away in anger and took the plenty with him","forms":["Hittite: Telipinu","English (Goetze): Telepinus"],"eq":[]},"niqmaddu":{"name":"Niqmaddu","type":"human","gloss":"the king of Ugarit whose throne is wept as he goes down to the Rephaim","forms":["Ugaritic: Niqmaddu","Ugaritic: nqmd"],"eq":[]},"bai-jian":{"name":"Bai Jian","type":"power","gloss":"the Yellow Emperor's commander struck into the sea in the war with Chiyou, a wandering soul later invested as a god","forms":["Chinese: Bai Jian"],"eq":[]}}; window.WALLPATH = "../wall.html";</script><script>
+const $ = (s, el=document) => el.querySelector(s);
+const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const themeBtn = $('#theme'); if (themeBtn) themeBtn.addEventListener('click', () => {
+  const r = document.documentElement; const c = r.getAttribute('data-theme');
+  const dark = c ? c === 'dark' : !window.matchMedia('(prefers-color-scheme: light)').matches;
+  r.setAttribute('data-theme', dark ? 'light' : 'dark');
+});
+const drawer = $('#drawer'), scrim = $('#scrim'); const N = window.NAMES || {}; const WALL = window.WALLPATH || 'wall.html';
+function nameCard(id){
+  const c = N[id]; if (!c) return;
+  const forms = c.forms.length ? `<p class="mono up">Names in every tongue</p><ul>` + c.forms.map(f => `<li>${esc(f)}</li>`).join('') + `</ul>` : '';
+  const eq = c.eq.length ? `<p class="mono up">Who equated them</p><ul>` + c.eq.map(f => `<li>${esc(f)}</li>`).join('') + `</ul>` : '';
+  drawer.innerHTML = `<button class="close" aria-label="close">×</button><p class="mono">${esc(c.type)}</p><h3>${esc(c.name)}</h3><p>${esc(c.gloss)}</p>${forms}${eq}<p class="mono"><a href="${WALL}#name/${esc(id)}">this figure on the wall: its parts and its lines</a></p>`;
+  drawer.classList.add('open'); scrim.classList.add('on'); drawer.scrollTop = 0;
+  $('.close', drawer).addEventListener('click', closeDrawer);
+}
+function closeDrawer(){ drawer.classList.remove('open'); scrim.classList.remove('on'); }
+if (scrim) scrim.addEventListener('click', closeDrawer);
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeDrawer(); });
+document.querySelectorAll('a.nm').forEach(a => a.addEventListener('click', () => nameCard(a.dataset.name)));
+</script></body></html>

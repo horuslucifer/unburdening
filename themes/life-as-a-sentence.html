@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Life without status, or life as a sentence (Tithonus, Mher) · Bhāravataraṇa</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-12 0 64 64'><path d='M8 62 V14 Q8 4 20 4 Q32 4 32 14 V62' fill='none' stroke='%239a9488' stroke-width='3'/><path d='M13 62 V17 Q13 9 20 9 Q27 9 27 17 V62' fill='none' stroke='%239a9488' stroke-width='2' opacity='.6'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400;0,600;1,400;1,600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--ground:#121314;--ink:#e6dfd1;--ash:#9a9488;--rule:#2a2b2e;--dilbat:#d4a94e;--panel:#17181a;--mark:#e6dfd1}
+:root[data-theme="light"]{--ground:#f3f2ee;--ink:#1c1c1e;--ash:#6b665d;--rule:#d9d6cf;--dilbat:#8a5f0c;--panel:#eceae4;--mark:#1c1c1e}
+@media (prefers-color-scheme: light){:root:not([data-theme="dark"]){--ground:#f3f2ee;--ink:#1c1c1e;--ash:#6b665d;--rule:#d9d6cf;--dilbat:#8a5f0c;--panel:#eceae4;--mark:#1c1c1e}}
+*{box-sizing:border-box}
+html{background:var(--ground)}
+body{margin:0;background:var(--ground);color:var(--ink);font-family:"Source Serif 4",Georgia,serif;font-size:19px;line-height:1.62}
+.mono{font-family:"IBM Plex Mono",ui-monospace,Menlo,monospace;font-size:12px;letter-spacing:.06em;color:var(--ash)}
+.up{text-transform:uppercase}
+
+nav.top{display:flex;flex-wrap:nowrap;gap:12px 22px;align-items:center;padding:14px 24px;border-bottom:1px solid var(--rule)}
+nav.top a,nav.top button{white-space:nowrap}
+nav.top .brand{font-family:"Source Serif 4",serif;font-size:18px;font-weight:600;font-variant:small-caps;letter-spacing:.08em;color:var(--ink);display:flex;align-items:center;gap:12px;text-decoration:none;flex:none}
+nav.top .brand .niche{width:14px;height:22px;color:var(--ash);flex:none}
+nav.top .links{position:relative;display:flex;gap:22px;min-width:0;overflow-x:auto;scrollbar-width:none;padding:3px 0}
+nav.top .links::-webkit-scrollbar{display:none}
+nav.top a.l{text-decoration:none;color:var(--ash);padding-bottom:2px;border-bottom:1px solid transparent}
+nav.top a.l:hover{color:var(--dilbat)}
+nav.top a.l.on{color:var(--dilbat);border-bottom-color:var(--dilbat)}
+nav.top .sp{flex:1}
+nav.top button{background:none;border:1px solid var(--rule);color:var(--ash);cursor:pointer;padding:3px 9px;font:inherit;flex:none}
+@media (max-width:700px){nav.top{flex-wrap:wrap;gap:0 16px;padding:12px 16px 0}nav.top .links{order:3;flex:0 0 calc(100% + 32px);margin:0 -16px;padding:10px 40px 12px 16px;-webkit-mask-image:linear-gradient(to right,#000 calc(100% - 36px),transparent);mask-image:linear-gradient(to right,#000 calc(100% - 36px),transparent)}}
+a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible{outline:2px solid var(--dilbat);outline-offset:3px}
+.skip{position:absolute;left:-9999px;top:10px;z-index:30;background:var(--ground);color:var(--dilbat);padding:6px 10px;border:1px solid var(--dilbat);text-decoration:none}
+.skip:focus{left:12px}
+
+main{max-width:calc(34em + 96px);margin:0 auto;padding:34px 48px 120px}
+h1{font-size:34px;font-weight:600;line-height:1.15;margin:0 0 10px}
+h1.small{font-size:28px}
+h2{font-size:17px;font-weight:600;font-variant:small-caps;letter-spacing:.08em;margin:44px 0 10px;color:var(--ink)}
+p{margin:0 0 1em}
+p.lead{font-size:21px;line-height:1.5}
+p.quiet,.quiet{color:var(--ash)}
+a{color:var(--dilbat)}
+a.plain{color:inherit;text-decoration:none}
+a.plain:hover{color:var(--dilbat)}
+a.nm{color:inherit;text-decoration:none;border-bottom:1px dotted var(--ash);cursor:pointer}
+a.nm:hover{color:var(--dilbat);border-bottom-color:var(--dilbat)}
+.parts{list-style:none;padding:0;margin:0;border-top:1px solid var(--rule)}
+.parts li{border-bottom:1px solid var(--rule)}
+.parts a{display:grid;grid-template-columns:64px 1fr;gap:0 16px;padding:14px 0;color:inherit;text-decoration:none}
+.parts a:hover .t{color:var(--dilbat)}
+.parts .n{padding-top:6px}
+.parts .t{font-size:21px;font-weight:600}
+.parts .s{font-size:17px;color:var(--ash);margin-top:2px}
+.parts .m{margin-top:4px}
+/* the front door: the one ornament once, the way in, how deep it goes, then the apparatus as a quiet list */
+.door{margin:0 0 16px}
+.door .niche{display:block;width:40px;height:64px;color:var(--ash)}
+p.begin{margin:26px 0 10px;font-size:21px;font-weight:600;line-height:1.4}
+p.begin a{text-decoration:none;border-bottom:1px solid var(--dilbat)}
+p.depth{font-size:17px;line-height:1.5;margin:0 0 1.6em}
+.deeper{list-style:none;padding:0;margin:0;border-top:1px solid var(--rule)}
+.deeper li{border-bottom:1px solid var(--rule)}
+.deeper a{display:block;padding:14px 0;color:inherit;text-decoration:none}
+.deeper a:hover .t{color:var(--dilbat)}
+.deeper .t{display:block;font-size:19px;font-weight:600}
+.deeper .s{display:block;font-size:16px;color:var(--ash);margin-top:2px}
+.colophon{margin-top:44px;font-size:16px}
+@media (max-width:700px){main{padding:22px 16px 100px}body{font-size:18px}h1{font-size:28px}p.lead{font-size:19px;line-height:1.55}
+.door .niche{width:30px;height:48px}p.begin{font-size:19px}.parts a{grid-template-columns:1fr;gap:2px 0}.parts .n{padding-top:0}}
+.crumb{margin-bottom:8px}
+.story p{margin:0 0 1em}
+.told{margin:6px 0 2px}
+.margin{margin:0 0 1.2em 2em}
+.margin:before{content:"~ ";color:var(--dilbat)}
+.people{border-top:1px solid var(--rule)}
+.people details{border-bottom:1px solid var(--rule);padding:10px 0}
+.people summary{cursor:pointer;list-style:none;display:flex;align-items:baseline;gap:12px}
+.people summary::-webkit-details-marker{display:none}
+.people summary .t{font-size:19px;font-weight:600}
+.people summary:hover .t{color:var(--dilbat)}
+.people summary .bar{height:8px;background:var(--mark);opacity:.85;border-radius:1px;flex:none}
+.people summary .m{margin-left:auto;white-space:nowrap}
+.people .rec{padding:10px 0 4px 0}
+.people .rec .q{margin:0 0 3px;font-size:17px}
+.people .rec .q.f{font-style:italic}
+.people .rec .c{margin:0}
+.people .rec .c .tag{color:var(--dilbat)}
+.pn{display:flex;justify-content:space-between;gap:20px;margin-top:60px;padding-top:16px;border-top:1px solid var(--rule)}
+.pn a{text-decoration:none;font-size:16px}
+.doc-body h2{font-size:22px;font-variant:normal;letter-spacing:0;margin:1.6em 0 .5em}
+.doc-body h3{font-size:19px;font-weight:600;margin:1.4em 0 .4em}
+.doc-body h4,.doc-body h5,.doc-body h6{font-size:17px;font-style:italic;font-weight:600;margin:1.2em 0 .4em}
+.doc-body p.margin{margin:-.6em 0 1.2em 2em;font-size:12px}
+.doc-body p.indent{margin-left:2em;color:var(--ash)}
+.doc-body blockquote{margin:0 0 1em 1.4em;padding-left:1em;border-left:2px solid var(--rule)}
+.doc-body ul,.doc-body ol{padding-left:1.4em}
+.doc-body hr{border:0;border-top:1px solid var(--rule);margin:2em 0}
+.doc-body .tbl{overflow-x:auto;margin:0 0 1.2em}
+.doc-body table{border-collapse:collapse;font-size:15px;line-height:1.45;min-width:100%}
+.doc-body th,.doc-body td{border-bottom:1px solid var(--rule);padding:6px 10px 6px 0;text-align:left;vertical-align:top}
+.doc-body th{font-weight:600;font-size:13px;font-family:"IBM Plex Mono",monospace;color:var(--ash);text-transform:uppercase}
+.doc-body code{font-family:"IBM Plex Mono",monospace;font-size:14px;color:var(--ash)}
+.doc-body pre{font-family:"IBM Plex Mono",monospace;font-size:13px;white-space:pre-wrap;background:var(--panel);padding:12px 14px;border:1px solid var(--rule)}
+.chapters{list-style:none;padding:0;margin:0;border-top:1px solid var(--rule)}
+.chapters li{display:grid;grid-template-columns:64px 1fr auto;gap:0 16px;padding:12px 0;border-bottom:1px solid var(--rule);align-items:baseline}
+.chapters .t{font-size:19px}
+.chapters a.t{text-decoration:none;color:inherit}
+.chapters a.t:hover{color:var(--dilbat)}
+/* sources and themes */
+.srcs{list-style:none;padding:0;margin:0 0 10px;border-top:1px solid var(--rule)}
+.srcs li{border-bottom:1px solid var(--rule)}
+.srcs a{display:block;padding:10px 0;color:inherit;text-decoration:none}
+.srcs a:hover .t{color:var(--dilbat)}
+.srcs .t{font-size:18px;font-weight:600;display:block}
+.srcs .s{font-size:15px;color:var(--ash);display:block}
+.srcs .m{display:block;margin-top:2px}
+.lines .rec{border-top:1px solid var(--rule);padding:10px 0}
+.lines .rec .q{margin:0 0 4px;font-size:17px}
+.lines .rec .q.f{font-style:italic}
+.lines .rec .c{margin:0 0 4px}
+.lines .rec .c .tag{color:var(--dilbat)}
+.lines .rec .meta{font-size:15px;margin:0;line-height:1.5}
+.lines .rec .meta .mono{margin-right:4px}
+.lines h3{font-size:19px;font-weight:600;margin:28px 0 6px}
+.lines details{border-bottom:1px solid var(--rule);padding:8px 0}
+.lines summary{cursor:pointer;list-style:none;display:flex;gap:12px;align-items:baseline}
+.lines summary::-webkit-details-marker{display:none}
+.lines summary .t{font-size:19px;font-weight:600}
+.lines summary .m{margin-left:auto}
+/* the work */
+.work table{border-collapse:collapse;width:100%;font-size:16px}
+.work td,.work th{border-bottom:1px solid var(--rule);padding:5px 8px 5px 0;text-align:left;vertical-align:top;font-weight:400}
+.work td.n,.work th.n{text-align:right;font-family:"IBM Plex Mono",monospace;font-size:13px;color:var(--ash);white-space:nowrap}
+.work h2{margin-top:34px}
+/* the drawer */
+#drawer{position:fixed;top:0;right:0;height:100%;width:440px;max-width:100%;background:var(--panel);border-left:1px solid var(--rule);transform:translateX(100%);transition:transform 180ms ease-out;overflow-y:auto;padding:18px 22px 60px;z-index:20}
+#drawer.open{transform:none}
+@media (prefers-reduced-motion: reduce){#drawer{transition:none}}
+#drawer .close{position:absolute;top:12px;right:16px;cursor:pointer;background:none;border:0;color:var(--ash);font:inherit;font-size:20px}
+#drawer h3{font-size:20px;font-weight:600;margin:4px 0 2px}
+#drawer p{font-size:16px}
+#drawer ul{padding-left:18px;margin:4px 0 12px}
+#drawer li{font-size:15px;margin:2px 0}
+#scrim{position:fixed;inset:0;display:none;z-index:10}
+#scrim.on{display:block}
+@media (max-width:700px){#drawer{top:auto;bottom:0;height:85%;width:100%;border-left:0;border-top:1px solid var(--rule);transform:translateY(100%)}#drawer.open{transform:none}}
+</style>
+</head>
+<body>
+<a class="skip mono up" href="#main">Skip to the text</a><nav class="top mono up"><a class="brand" href="../index.html"><svg class="niche" viewBox="0 0 40 64" aria-hidden="true"><path d="M8 62 V14 Q8 4 20 4 Q32 4 32 14 V62" fill="none" stroke="currentColor" stroke-width="1.2"/><path d="M13 62 V17 Q13 9 20 9 Q27 9 27 17 V62" fill="none" stroke="currentColor" stroke-width="0.8" opacity=".6"/></svg><span>Bhāravataraṇa</span></a><div class="links"><a class="l" href="../index.html">Home</a><a class="l" href="../story/the-horses-foot.html">The story</a><a class="l" href="../chapters/index.html">Chapters</a><a class="l" href="../sources.html">Sources</a><a class="l on" href="../themes.html">Themes</a><a class="l" href="../figures.html">Figures</a><a class="l" href="../research.html">Research</a><a class="l" href="../wall.html">The wall</a><a class="l" href="../how.html">How it was made</a></div><span class="sp"></span><button id="theme" class="mono up" type="button">light / dark</button></nav><script>(function(){var a=document.querySelector("nav.top .links a.on");if(a){var l=a.parentNode;if(l.scrollWidth>l.clientWidth)l.scrollLeft=Math.max(0,a.offsetLeft-16);}})();</script><main id="main"><p class="crumb mono up"><a class="plain" href="../themes.html">The themes</a> · Who may pass the door</p><h1 class="small">Life without status, or life as a sentence (Tithonus, Mher)</h1><p class="lead quiet">13 lines from 5 sources in 4 peoples.</p><h2>In the story</h2><p><a href="../story/the-horses-foot.html">The Horse&#x27;s Foot</a> <span class="mono">3</span> · <a href="../story/going-down.html">Going Down</a> <span class="mono">7</span> · <a href="../story/the-gifts-of-the-smiths.html">The Gifts of the Smiths</a> <span class="mono">1</span> · <a href="../story/hybrids.html">Hybrids</a> <span class="mono">3</span> · <a href="../story/the-burden.html">The Burden</a> <span class="mono">1</span> · <a href="../story/remedy.html">Remedy</a> <span class="mono">1</span> · <a href="../story/claimed.html">Claimed</a> <span class="mono">3</span> · <a href="../story/awaiting.html">Awaiting</a> <span class="mono">4</span> · <a href="../story/where-we-are-now.html">Where We Are Now</a> <span class="mono">1</span></p><h2>Who tells it</h2><ul><li><a href="../sources/hermetica.html">The Hermetica: Poimandres and the Asclepius</a> <span class="mono">7</span></li><li><a href="../sources/irenaeus.html">Irenaeus and the heresiologists</a> <span class="mono">2</span></li><li><a href="../sources/homer.html">Homer: the Iliad and the Odyssey</a> <span class="mono">2</span></li><li><a href="../sources/leyenda.html">The Legend of the Suns and the Annals of Cuauhtitlan</a> <span class="mono">1</span></li><li><a href="../sources/sasun.html">The epic of Sasun (David of Sasun)</a> <span class="mono">1</span></li></ul><h2>The lines, by people</h2><div class="people lines"><details open><summary><span class="t">Greece</span><span class="m mono">4 lines</span></summary><div class="rec"><p class="q">“So also golden-throned Eos rapt away Tithonus who was of your race and like the deathless gods. And she went to ask the dark-clouded Son of Cronos that he should be deathless and live eternally; and Zeus bowed his head to her prayer and fulfilled her desire. Too simple was queenly Eos: she thought not in her heart to ask youth for him and to strip him of the slough of deadly age. So while he enjoyed the sweet flower of life he lived rapturously with golden-throned Eos, the early-born, by the streams of Ocean, at the ends of the earth; but when the first grey hairs began to ripple from his comely head and noble chin, queenly Eos kept away from his bed, though she cherished him in her house and nourished him with food and ambrosia and gave him rich clothing. But when loathsome old age pressed full upon him, and he could not move nor lift his limbs, this seemed to her in her heart the best counsel: she laid him in a room and put to the shining doors. There he babbles endlessly, and no more has strength at all, such as once he had in his supple limbs.”</p><p class="c mono">F25. Tithonus behind the shining doors. Homeric Hymn to Aphrodite 218-238, tr. Evelyn-White (1914).</p><p class="meta"><span class="mono">figures</span> <a class="nm" data-name="eos">Eos</a>, <a class="nm" data-name="kronos">Kronos</a>, <a class="nm" data-name="tithonus">Tithonus</a>, <a class="nm" data-name="zeus">Zeus</a><br><span class="mono">themes</span> <a href="../themes/life-as-a-sentence.html">Life without status, or life as a sentence (Tithonus, Mher)</a>, <a href="../themes/path-life-allotted.html">Deathless life is allotted, refused or negotiated (Atlas path 4)</a>, <a href="../themes/house-of-troy.html">The house of Troy holds every form of the gift</a>, <a href="../themes/witnesses-who-cannot-die.html">The witnesses who cannot die</a><br><span class="mono">in the story</span> <a href="../story/the-gifts-of-the-smiths.html">The Gifts of the Smiths</a> · <a href="../story/hybrids.html">Hybrids</a> · <a href="../story/awaiting.html">Awaiting</a> <span class="mono quiet">· u11-0235</span></p></div><div class="rec"><p class="q">“Now Dawn arose from her couch from beside lordly Tithonus, to bear light to the immortals and to mortal men. And the gods were sitting down to council”</p><p class="c mono">The morning formula keeps him in every dawn: &quot; … &quot; (Odyssey 5.1-3, Murray).</p><p class="meta"><span class="mono">figures</span> <a class="nm" data-name="tithonus">Tithonus</a>, <a class="nm" data-name="eos">Eos</a><br><span class="mono">themes</span> <a href="../themes/life-as-a-sentence.html">Life without status, or life as a sentence (Tithonus, Mher)</a>, <a href="../themes/yearly-door.html">The yearly door</a><br><span class="mono">in the story</span> <a href="../story/the-horses-foot.html">The Horse&#x27;s Foot</a> · <a href="../story/awaiting.html">Awaiting</a> · <a href="../story/where-we-are-now.html">Where We Are Now</a> <span class="mono quiet">· u11-0236</span></p></div><div class="rec"><p class="q">“from vessel to vessel”</p><p class="c mono">F21. Helen of Troy as the First Thought, &quot; … &quot;. Text: Irenaeus on Simon of Samaria; Hippolytus, Refutation of All Heresies (c. 222-235). Passage: Irenaeus 1.23.2 and 1.23.4; Hippolytus Ref. 6.14. Edition: Ante-Nicene Fathers English. Rights note: quoted &quot;at length&quot; by the slice.</p><p class="meta"><span class="mono">figures</span> <a class="nm" data-name="helena-of-tyre">Helena of Tyre</a><br><span class="mono">themes</span> <a href="../themes/life-as-a-sentence.html">Life without status, or life as a sentence (Tithonus, Mher)</a><br><span class="mono">in the story</span> <a href="../story/hybrids.html">Hybrids</a> <span class="mono quiet">· u10-0426</span></p></div><div class="rec"><p class="q">“&quot;Having redeemed from slavery at Tyre, a city of Phœnicia, a certain woman named Helena, he was in the habit of carrying her about with him, declaring that this woman was the first conception of his mind, the mother of all, by whom, in the beginning, he conceived in his mind [the thought] of forming angels and archangels. For this Ennœa leaping forth from him, and comprehending the will of her father, descended to the lower regions [of space], and generated angels and powers, by whom also he declared this world was formed. But after she had produced them, she was detained by them through motives of jealousy, because they were unwilling to be looked upon as the progeny of any other being. ... She suffered all kinds of contumely from them, so that she could not return upwards to her father, but was even shut up in a human body, and for ages passed in succession from one female body to another, as from vessel to vessel. She was, for example, in that Helen on whose account the Trojan War was undertaken; for whose sake also Stesichorus was struck blind, because he had cursed her in his verses, but afterwards, repenting and writing what are called palinodes, in which he sang her praise, he was restored to sight. Thus she, passing from body to body, and suffering insults in every one of them, at last became a common prostitute; and she it was that was meant by the lost sheep&quot; (1.23.2)”</p><p class="c mono">F21. Helen of Troy as the First Thought, &quot;from vessel to vessel&quot;. Text: Irenaeus on Simon of Samaria; Hippolytus, Refutation of All Heresies (c. 222-235). Passage: Irenaeus 1.23.2 and 1.23.4; Hippolytus Ref. 6.14. Edition: Ante-Nicene Fathers English. Rights note: quoted &quot;at length&quot; by the slice.</p><p class="meta"><span class="mono">figures</span> <a class="nm" data-name="simon-magus">Simon of Gitta</a>, <a class="nm" data-name="helena-of-tyre">Helena of Tyre</a>, <a class="nm" data-name="helen">Helen</a>, <a class="nm" data-name="troy">Troy</a>, <a class="nm" data-name="tyre">Tyre</a><br><span class="mono">themes</span> <a href="../themes/bright-one-came-down.html">The bright one who came down (the Morning Star)</a>, <a href="../themes/house-of-troy.html">The house of Troy holds every form of the gift</a>, <a href="../themes/life-as-a-sentence.html">Life without status, or life as a sentence (Tithonus, Mher)</a><br><span class="mono">in the story</span> <a href="../story/going-down.html">Going Down</a> · <a href="../story/hybrids.html">Hybrids</a> · <a href="../story/claimed.html">Claimed</a> <span class="mono quiet">· u10-0427</span></p></div></details><details open><summary><span class="t">Christian, Gnostic and Hermetic</span><span class="m mono">7 lines</span></summary><div class="rec"><p class="q">“But if a soul on entering in the body of a man persisteth in its vice, it neither tasteth deathlessness nor shareth in the Good; but speeding back again it turns into the path that leads to creeping things. This is the sentence of the vicious soul.&quot;
+
+&quot;And the soul’s vice is ignorance. For that the soul who hath no knowledge of the things that are, or knowledge of their nature, or of Good, is blinded by the body’s passions and tossed about.&quot;
+
+&quot;This wretched soul, not knowing what she is, becomes the slave of bodies of strange form in sorry plight, bearing the body as a load; not as the ruler, but the ruled. This [ignorance] is the soul’s vice.”</p><p class="c mono">F14. The Key (Corpus Hermeticum X) § 8: the sentence of the vicious soul, back down the path to creeping things.</p><p class="meta"><span class="mono">figures</span> <a class="nm" data-name="hermes-trismegistus">Hermes Trismegistos</a><br><span class="mono">themes</span> <a href="../themes/life-as-a-sentence.html">Life without status, or life as a sentence (Tithonus, Mher)</a><br><span class="mono">in the story</span> <a href="../story/claimed.html">Claimed</a> <span class="mono quiet">· hermetica-0123</span></p></div><div class="rec"><p class="q">“They then, my son, as though they had done something grand, with over-busy daring armed themselves, and acted contrary to the commands they had received; and forthwith they began to overstep their proper limits and their reservations, and would no longer stay in the same place, but were for ever moving, and thought that being ever stationed in one place was death.&quot;
+
+&quot;That they would do this thing, however, O my son (as Hermes says when he speaks unto me), had not escaped the Eye of Him who is the God and Lord of universal things; and He searched out a punishment and bond, the which they now in misery endure.&quot;
+
+&quot;Thus was it that the Sovereign King of all resolved to fabricate with art the human frame, in order that in it the race of Souls throughout might be chastised.”</p><p class="c mono">F21. Hermetica, the Virgin of the World I § 15: the souls overstep their limits; God seeks a punishment and bond, and resolves to make the human frame to chastise them.</p><p class="meta"><span class="mono">figures</span> <a class="nm" data-name="hermes">Hermes</a><br><span class="mono">themes</span> <a href="../themes/power-before-permission.html">Power that reaches heaven before permission does (Triśaṅku, Sun Wukong)</a>, <a href="../themes/life-as-a-sentence.html">Life without status, or life as a sentence (Tithonus, Mher)</a><br><span class="mono">in the story</span> <a href="../story/going-down.html">Going Down</a> · <a href="../story/the-burden.html">The Burden</a> <span class="mono quiet">· hermetica-0130</span></p></div><div class="rec"><p class="q">“And God, the Master of the universe, rejoiced on hearing this, and ordered that the race of men should be.&quot;
+
+&quot;“I,” Hermes says, “was seeking for the stuff which had to be employed, and calling on the Monarch for His aid. And He gave order to the Souls to give the mixture’s residue; and taking it I found it utterly dried up.&quot;
+
+&quot;“Thereon, in mixing it, I used more water far than was required to bring the matter back unto [p. 107] its former state, so that the plasm was in every way relaxable, and weak and powerless, in order that it might not, in addition to its natural sagacity, be full of power as well.&quot;
+
+&quot;“I moulded it, and it was fair; and I rejoiced at seeing mine own work, and from below I called upon the Monarch to behold. And He did look on it, and was rejoiced, and ordered that the Souls should be enfleshed.&quot;
+
+&quot;“Then were they first plunged in deep gloom, and, learning that they were condemned, began to wail. I was myself amazed at the Souls’ utterances.”&quot;
+Mead&#x27;s note on the lacuna: &quot;There is a lacuna in the text, which I have thus conjecturally completed.”</p><p class="c mono">F24. Hermetica, the Virgin of the World I § 18: Hermes moulds the frame weak on purpose; the Souls are enfleshed and, learning they are condemned, wail.</p><p class="meta"><span class="mono">figures</span> <a class="nm" data-name="hermes">Hermes</a><br><span class="mono">themes</span> <a href="../themes/life-as-a-sentence.html">Life without status, or life as a sentence (Tithonus, Mher)</a><br><span class="mono">in the story</span> <a href="../story/going-down.html">Going Down</a> <span class="mono quiet">· hermetica-0133</span></p></div><div class="rec"><p class="q">“Now give good heed, son Horus, for thou art being told the Mystic Spectacle which Kamēphis, our forefather, was privileged to hear from Hermes, record-writer of all deeds, and I from Kamēphis, most ancient of [us] all, when he did honour me with the Black [Rite] that gives perfection; hear thou it now from me!&quot;
+
+&quot;For when, O wondrous son of mighty fame, if they were about to be shut in their prisons, some simply uttered wails and groans—in just the self-same way as beasts that once have been at liberty, when torn from their accustomed haunts they love so well, will be bad slaves, will fight [p. 108] and make revolt, and be in no agreement with their masters; nay more, if circumstance should serve, will even do to death those that oppress them.&quot;
+
+&quot;Others with louder outcry hissed like snakes; another one shrieked shrilly, and ere he spake shed many tears, and, turning up and down what things served him as eyes, he said:”</p><p class="c mono">F25. Hermetica, the Virgin of the World I § 19: the chain of the telling, Hermes to Kamēphis to Isis; the souls as beasts torn from their haunts.</p><p class="meta"><span class="mono">figures</span> <a class="nm" data-name="hermes">Hermes</a>, <a class="nm" data-name="hermes-trismegistus">Hermes Trismegistos</a>, <a class="nm" data-name="horus">Horus</a>, <a class="nm" data-name="isis">Isis</a><br><span class="mono">themes</span> <a href="../themes/life-as-a-sentence.html">Life without status, or life as a sentence (Tithonus, Mher)</a><br><span class="mono">in the story</span> <a href="../story/going-down.html">Going Down</a> <span class="mono quiet">· hermetica-0134</span></p></div><div class="rec"><p class="q">“For that no longer shall our eyes behold [p. 109] the souls of God; when through such watery spheres as these we see our own forefather Heaven grown small and tiny, we shall dissolve in sighs,—nay, there’ll be times we shall not see at all, for sentence hath been passed on us poor things; the gift of real sight hath not been given to us, in that it hath not been permitted us to see without the light. Windows they are, not eyes!&quot;
+
+&quot;“How wretchedly shall we endure to hear our kindred breaths breathe in the air, when we no longer shall be breathing with them! For home, instead of this great world high in the air, a heart’s small mass awaits us. Set Thou us free from bonds so base as these to which we have sunk down, and end our grief!&quot;
+
+&quot;“O Lord, and Father, and our Maker, if so it be Thou hast thus quickly grown indifferent unto the works of Thine own Hands, appoint for us some limits! Still deem us worthy of some words, though they be few, while yet we can see through the whole world-order bright on every side!”</p><p class="c mono">F26. Hermetica, the Virgin of the World I § 21: the souls&#x27; lament: windows, not eyes; a heart&#x27;s small mass for home; appoint for us some limits.</p><p class="meta"><span class="mono">themes</span> <a href="../themes/life-as-a-sentence.html">Life without status, or life as a sentence (Tithonus, Mher)</a><br><span class="mono">in the story</span> <a href="../story/going-down.html">Going Down</a> <span class="mono quiet">· hermetica-0135</span></p></div><div class="rec"><p class="q">“Thus speaking, Horus, son, the Souls gained their request; for that the Monarch came, and sitting on the Throne of Truth made answer to their prayers.&quot;
+
+&quot;[p. 110]&quot;
+
+&quot;“O Souls, Love and Necessity shall be your lords, they who are lords and marshals after Me of all. Know, all of you who are set under My unageing rule, that as long as ye keep you free of sin, ye shall dwell in the fields of Heaven; but if some cause of blame for aught attach itself to you, ye shall dwell in the place that Destiny allots, condemned to mortal wombs.&quot;
+
+&quot;“If, then, the things imputed to your charge be slight, leaving the bond of fleshly frames subject to death, ye shall again embrace your [father] Heaven, and sigh no more; but if ye shall commit some greater sins, and with the end appointed of your frames be not advanced, no longer shall ye dwell in Heaven, nor even in the bodies of mankind, but shall continue after that to wander round in lives irrational.”&quot;
+Mead&#x27;s note on Love and Necessity: &quot;*Cf.* Tim. 42 A: “When they should be implanted in bodies by necessity . . . they should have . . . sensation . . . and love.””</p><p class="c mono">F27. Hermetica, the Virgin of the World I § 22: the Monarch&#x27;s sentence: Love and Necessity your lords; mortal wombs; the return for slight faults, lives irrational for great ones.</p><p class="meta"><span class="mono">figures</span> <a class="nm" data-name="horus">Horus</a><br><span class="mono">themes</span> <a href="../themes/life-as-a-sentence.html">Life without status, or life as a sentence (Tithonus, Mher)</a>, <a href="../themes/bound-with-a-timer.html">The bound with a timer</a><br><span class="mono">in the story</span> <a href="../story/the-horses-foot.html">The Horse&#x27;s Foot</a> · <a href="../story/going-down.html">Going Down</a> · <a href="../story/awaiting.html">Awaiting</a> <span class="mono quiet">· hermetica-0136</span></p></div><div class="rec"><p class="q">“Thus speaking, Horus mine, He gave to all the gift of breath, and thus continued:&quot;
+
+&quot;“It is not without purpose or by chance I have laid down the law of your transformings; but as [it will be] for the worse if ye do aught unseemly, so for the better, if ye shall will what’s worthy of your birth.&quot;
+
+&quot;“For I, and no one else, will be the Witness and the Watcher. Know, then, it is for what ye have done heretofore, ye do endure this being shut in bodies as a punishment.&quot;
+
+&quot;“The difference in your rebirths, accordingly, for you, shall be as I have said, a difference of bodies, and their [final] dissolution [shall be] a benefit and a [return to] the fair happiness of former days.&quot;
+
+&quot;“But if ye think to do aught else unworthy of Me, your mind shall lose its sight so as to think the contrary [of what is true], and take the punishment for benefit; the change to better things for infamous despite.&quot;
+
+&quot;“But the more righteous of you, who stand upon the threshold of the change to the diviner state, shall among men be righteous kings, and genuine philosophers, founders of states, and lawgivers, and real seers, and true herb-knowers, [p. 112] and prophets of the Gods most excellent, skilful musicians, skilled astronomers, and augurs wise, consummate sacrificers,—as many of you as are worthy of things fair and good.”</p><p class="c mono">F28. Hermetica, the Virgin of the World I § 23: the law of transformings; God the Witness and the Watcher; the righteous shall be kings, philosophers, lawgivers and seers among men.</p><p class="meta"><span class="mono">figures</span> <a class="nm" data-name="horus">Horus</a><br><span class="mono">themes</span> <a href="../themes/life-as-a-sentence.html">Life without status, or life as a sentence (Tithonus, Mher)</a><br><span class="mono">in the story</span> <a href="../story/going-down.html">Going Down</a> · <a href="../story/claimed.html">Claimed</a> <span class="mono quiet">· hermetica-0137</span></p></div></details><details open><summary><span class="t">Armenia and the Caucasus</span><span class="m mono">1 line</span></summary><div class="rec"><p class="q f">&quot;Mher, since you have fought with me and put me to shame, I have called on sweet God: may you be deathless, heirless.&quot; (the consolidated text)
+&quot;Your place is the Raven&#x27;s Rock. When the world is destroyed and built once more, so that the ground can hold before your horse, the world is yours.&quot;
+&quot;Mher said: &#x27;Hay-hoy, it is in vain: the earth too has grown old, it will not hold under my horse&#x27;s feet.&#x27;&quot; (Sasna tsrer, Cycle IV, the sweep&#x27;s rendering)
+&quot;When wheat has become like a cherry-plum, and barley like a rose-hip, then there is command that we come out of this place.&quot; (Krpo)
+&quot;Within that door the wheel of the firmament turns, that is, the wheel, the round, of the people of the world or of the globe. Mher watches it continually; when that wheel stops, on that day Mher will be freed, come out and ruin the world.&quot; And: &quot;Every year on the night of the Ascension heaven and earth kiss each other, and at that moment Mher&#x27;s door opens.&quot; (Srvandztyants 1874)
+Collins&#x27;s English of Krpo: &quot;On Ascension-night the door of Mcher&#x27;s rock opens. But it is decreed that he shall not go out: the floor holds him not, his feet sink into the earth.&quot; (Collins 1901)</p><p class="c mono">F32. David of Sassoun (Sasna tsrer), Cycle IV: Little Mher and his four clocks. <span class="tag">our translation</span></p><p class="meta"><span class="mono">figures</span> <a class="nm" data-name="little-mher">Little Mher</a>, <a class="nm" data-name="agravakar">Agravakar</a><br><span class="mono">themes</span> <a href="../themes/life-as-a-sentence.html">Life without status, or life as a sentence (Tithonus, Mher)</a>, <a href="../themes/bound-with-a-timer.html">The bound with a timer</a>, <a href="../themes/world-rebuilt.html">The world rebuilt, and the sleeper who returns to it</a><br><span class="mono">in the story</span> <a href="../story/the-horses-foot.html">The Horse&#x27;s Foot</a> · <a href="../story/awaiting.html">Awaiting</a> <span class="mono quiet">· u12-0546</span></p></div></details><details open><summary><span class="t">Mesoamerica</span><span class="m mono">1 line</span></summary><div class="rec"><p class="q">“les cortó los pescuezos y les remendó su cabeza en su nalga, …”</p><p class="c mono">&#x27;Want nothing more; hollow out a very great cypress, and go into it when the vigil of Toçoztli comes and the sky comes sinking down ... One ear of maize only shall you eat, and one your wife.&#x27; The gods above: &quot;&#x27;¡Dioses! ¿quién ha hecho fuego? ¿quién ha ahumado el cielo?&#x27;&quot; Titlacahuan &quot; … &quot; &#x27;cut their necks and patched their heads onto their rumps, and they became dogs.&#x27; <span class="tag">still in copyright, so only a fragment</span></p><p class="meta"><span class="mono">figures</span> <a class="nm" data-name="tezcatlipoca">Tezcatlipoca</a>, <a class="nm" data-name="tata-and-nene">Tata and Nene</a><br><span class="mono">themes</span> <a href="../themes/flood-survivor.html">The flood survivor</a>, <a href="../themes/life-as-a-sentence.html">Life without status, or life as a sentence (Tithonus, Mher)</a><br><span class="mono">in the story</span> <a href="../story/remedy.html">Remedy</a> <span class="mono quiet">· u10-0362</span></p></div></details></div><div class="pn"><span><a href="../themes.html">← All themes</a></span><span></span></div></main><div id="scrim"></div><aside id="drawer" aria-live="polite"></aside><script>window.NAMES = {"kronos":{"name":"Kronos","type":"god","gloss":"the deposed elder king of the Greek gods, Saturn in Latin, bound in sleep in the western ocean","forms":["Greek: Kronos","Greek: Cronus","Greek (Sibyl): Cronos","Latin: Saturn","Armenian (Eusebius): Kron","Arabic (Picatrix): Zuḥal","Persian (Picatrix): Kaywān","Mandaic: Kēwān","Sanskrit (Picatrix): Sanasara","Coptic (Pistis Sophia): Orimouth"],"eq":["Armenian Eusebius: Kron is the same whom they call father of Aramazd and others Time","Philo of Byblos: Elos who is also Kronos","Picatrix 3.7: Saturn = Zuḥal = Kaywān = Kronos = Sanasara","Pistis Sophia 136: Kronos is Orimouth","Manetho and Plutarch: Geb is Kronos","Codex Wormianus: Njörðr is Saturn","Movses Khorenatsʻi 1.7: the one named Kronos and Bel was Nimrod","Annius: Nymbrotus the first Saturn of Babylonia","Berossus: Cronus warns Xisuthrus of the flood","d'Arbois de Jubainville: Balor is Kronos"]},"zeus":{"name":"Zeus","type":"god","gloss":"the Greek sovereign of the gods, Jupiter in Latin, who planned the war to lighten the earth","forms":["Greek: Zeus","Latin: Jupiter","Latin: Jove","Latin: Iuppiter","Coptic (Pistis Sophia): Chonbal"],"eq":["Herodotus 4.59: the Scythians call Zeus Papaios","Herodotus: Amun is Zeus","Aristotle via Diogenes Laertius: Oromasdes is Zeus","Philo of Byblos: Demarous is Zeus king of gods","Berossus: Belus by whom they signify Jupiter"]},"hermes":{"name":"Hermes","type":"god","gloss":"the Greek messenger god, Mercury in Latin","forms":["Greek: Hermes","Latin: Mercury","Coptic (Pistis Sophia): Tarpetanouph"],"eq":["Zosimos: pairs Thoth with Hermes","the euhemerist file (u8): Faunus was called Hermes for the name of the wandering star","Caesar BG 6.17.1: the Gauls' chief god is Mercury the inventor of all the arts"]},"eos":{"name":"Eos","type":"god","gloss":"the Dawn, who took Tithonus and won Memnon immortality","forms":["Greek: Eos","Latin: Aurora","Greek (Hesiod): Erigenia","Greek: Ἠριγένεια"],"eq":[]},"tithonus":{"name":"Tithonus","type":"human","gloss":"Priam's half-brother, taken by the Dawn and made deathless without youth; founder of Susa in the court sources","forms":["Greek: Tithonus"],"eq":[]},"helen":{"name":"Helen","type":"human","gloss":"the daughter of Zeus seized to Troy, whose image went to Troy while she waited in Egypt; Achilles's bride on Leuke","forms":["Greek: Helen","Greek (Stesichorus): her eidōlon"],"eq":[]},"troy":{"name":"Troy","type":"place","gloss":"the city of Priam, Ilios and Troia in Greek, the Hill of Ruin","forms":["Greek: Ilios","Greek: Troia","Linear B: to-ro-ja"],"eq":["Snorri: Asgard is Troy and Ragnarök is the fall of Troy"]},"tyre":{"name":"Tyre","type":"place","gloss":"the Phoenician city of Hiram and of Helena found in a brothel","forms":["Greek: Tyre"],"eq":[]},"simon-magus":{"name":"Simon of Gitta","type":"human","gloss":"the magician of Acts 8, who found Helena in a brothel in Tyre","forms":["Greek: Simon of Gitta","Greek: Simon of Samaria"],"eq":[]},"helena-of-tyre":{"name":"Helena of Tyre","type":"human","gloss":"Simon's companion, the First Thought of God found in a brothel in Tyre","forms":["Greek: Helena","Greek: Ennoia"],"eq":["Simon (in Irenaeus): Helena is the First Thought of God"]},"isis":{"name":"Isis","type":"god","gloss":"the advocate in the trial of Horus and Seth, who gathers Osiris and extracts Ra's secret name; teacher of the Egyptian letters (Isidore)","forms":["Egyptian: Isis"],"eq":["Herodotus: Isis is Demeter"]},"horus":{"name":"Horus","type":"god","gloss":"the heir of Osiris, whose living image the king is","forms":["Egyptian: Horus","Egyptian (Turin): Haroeris","Egyptian: Harsomtus"],"eq":[]},"hermes-trismegistus":{"name":"Hermes Trismegistos","type":"human","gloss":"the thrice-great Hermes, a title borne by several sages across the flood in Abū Maʿshar, the first of them Enoch","forms":["Greek: Hermes Trismegistos","Arabic (Abū Maʿshar): the first Hermes","Greek (Gifford): Hermes Trismegistus"],"eq":["Philo of Byblos: Taautos is Thoth and Hermes Trismegistos","Abū Maʿshar: Enoch is Idris and the first Hermes","Abū Maʿshar as the scholars read him: Hushang is the first Hermes"]},"little-mher":{"name":"Little Mher","type":"human","gloss":"the last hero of Sasun, shut in the Raven's Rock at Van until the world is remade, who comes out on certain nights","forms":["Armenian: Pokr Mher","Armenian: Mher","English (Collins): Mcher"],"eq":["Srvandztyants: perhaps Mher is the great Mihr himself"]},"agravakar":{"name":"Agravakar","type":"place","gloss":"the Raven's Rock at Van, Mher's door, the Urartian niche with Ishpuini's list","forms":["Armenian: Agravakar","English: the Raven's Rock"],"eq":[]},"tezcatlipoca":{"name":"Tezcatlipoca","type":"god","gloss":"the smoking-mirror god, maker and punisher, who lowers himself to the water as the Great Bear","forms":["Nahuatl: Tezcatlipoca","Nahuatl (Leyenda): Titlacahuan"],"eq":[]},"tata-and-nene":{"name":"Tata and Nene","type":"human","gloss":"the Nahua flood couple saved in a hollowed cypress and punished for their fire","forms":["Nahuatl: Tata and Nene"],"eq":[]}}; window.WALLPATH = "../wall.html";</script><script>
+const $ = (s, el=document) => el.querySelector(s);
+const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const themeBtn = $('#theme'); if (themeBtn) themeBtn.addEventListener('click', () => {
+  const r = document.documentElement; const c = r.getAttribute('data-theme');
+  const dark = c ? c === 'dark' : !window.matchMedia('(prefers-color-scheme: light)').matches;
+  r.setAttribute('data-theme', dark ? 'light' : 'dark');
+});
+const drawer = $('#drawer'), scrim = $('#scrim'); const N = window.NAMES || {}; const WALL = window.WALLPATH || 'wall.html';
+function nameCard(id){
+  const c = N[id]; if (!c) return;
+  const forms = c.forms.length ? `<p class="mono up">Names in every tongue</p><ul>` + c.forms.map(f => `<li>${esc(f)}</li>`).join('') + `</ul>` : '';
+  const eq = c.eq.length ? `<p class="mono up">Who equated them</p><ul>` + c.eq.map(f => `<li>${esc(f)}</li>`).join('') + `</ul>` : '';
+  drawer.innerHTML = `<button class="close" aria-label="close">×</button><p class="mono">${esc(c.type)}</p><h3>${esc(c.name)}</h3><p>${esc(c.gloss)}</p>${forms}${eq}<p class="mono"><a href="${WALL}#name/${esc(id)}">this figure on the wall: its parts and its lines</a></p>`;
+  drawer.classList.add('open'); scrim.classList.add('on'); drawer.scrollTop = 0;
+  $('.close', drawer).addEventListener('click', closeDrawer);
+}
+function closeDrawer(){ drawer.classList.remove('open'); scrim.classList.remove('on'); }
+if (scrim) scrim.addEventListener('click', closeDrawer);
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeDrawer(); });
+document.querySelectorAll('a.nm').forEach(a => a.addEventListener('click', () => nameCard(a.dataset.name)));
+</script></body></html>
